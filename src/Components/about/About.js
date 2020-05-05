@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './about.module.css';
+import classes from './About.module.css';
 
 const about = () => {
 

@@ -12,7 +12,7 @@ class Home extends Component {
         var layoutStyle={
             backgroundColor: '#5d6769',
             width: '100vw',
-            height: '10vh'
+            height: '15vh'
         }
         return(
             <div>

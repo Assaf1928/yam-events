@@ -2,5 +2,11 @@
     background-color: #86a6b3;
     margin-bottom: 10vh;
     width: 100vw;
-    height: 80vh;
+    height: 75vh;
+}
+
+
+.img__div img{
+    width: 100vw;
+    height:80vh;
 }
