@@ -7,16 +7,22 @@ import About from '../../Components/about/About';
 
 class Home extends Component {
    
+    constructor(props) {
+        super(props);
+        this.inputRef = React.createRef();
+      }
+
     render(){
 
-        var layoutStyle={
+        var layoutStyle={          
             backgroundColor: '#5d6769',
             width: '100vw',
-            height: '15vh'
+            height: '15vh' 
         }
+        
         return(
             <div>
-                <div style={layoutStyle}>layout</div>
+                <div style={layoutStyle}></div>
                 <BigCarousel />
                 <About />
                 <SmallCarousel/>

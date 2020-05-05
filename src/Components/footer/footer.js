@@ -1,6 +1,8 @@
 import React from 'react'
+
 import classes from './footer.module.css'
 import {AiFillFacebook,AiFillInstagram,AiFillMail,AiFillPhone} from 'react-icons/ai'
+
 const footer = () => (
     <footer className={classes.footer__container}>
         <div className={classes.row}>
@@ -38,4 +40,5 @@ const footer = () => (
     </div>
     </footer>
 )
-export default footer
+
+export default footer;
