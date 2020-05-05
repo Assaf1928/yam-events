@@ -3,12 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Layout from '../src/hoc/Layout/Layout'
+import Layout from '../src/hoc/Layout/Layout';
+import { BrowserRouter } from 'react-router-dom';
+
 ReactDOM.render(
   <React.StrictMode>
+      <BrowserRouter>
+
     <Layout>
     <App />
     </Layout>
+    </BrowserRouter>
+
   </React.StrictMode>,
   document.getElementById('root')
 );

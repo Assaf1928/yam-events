@@ -6,26 +6,17 @@ const footer = () => (
         <div className={classes.row}>
             <div className={classes.row__item}><ul>
             <li>asdasd</li>
-            <li>asdasd</li>
-            <li>asdasd</li>
-            <li>asdasd</li>
-            <li>asdasd</li>
+
             </ul>
             </div>
             <div className={classes.row__item}><ul>
             <li>asdasd</li>
-            <li>asdasd</li>
-            <li>asdasd</li>
-            <li>asdasd</li>
-            <li>asdasd</li>
+
             </ul>
             </div>
             <div className={classes.row__item}><ul>
             <li>asdasd</li>
-            <li>asdasd</li>
-            <li>asdasd</li>
-            <li>asdasd</li>
-            <li>asdasd</li>
+
             </ul>
             </div>
         </div>

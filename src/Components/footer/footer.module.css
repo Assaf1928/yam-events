@@ -1,7 +1,13 @@
 .footer__container {
 width:100%;
 background-color:rgb(74, 72, 75);
+position: absolute;
+bottom: 0;
+clear:both;
+height:210px;
+border-bottom: 2px solid rgb(74, 72, 75);
 }
+
 .footer__container hr {
     border:1px solid black;
 }
@@ -38,3 +44,12 @@ background-color:rgb(74, 72, 75);
     margin-bottom: 20px;
 }
 
+
+@media (max-width: 900px) {
+    .icons__row {
+        font-size:20px;
+    }
+    .row {
+        width:80%;
+    }
+}
