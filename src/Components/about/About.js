@@ -1,3 +1,14 @@
+import React from 'react';
+
+import classes from './About.module.css';
+
 const about = () => {
-    console.log("hi")
+
+    return (
+        <div className={classes.about__div}>
+            About
+        </div>
+    );
 }
+
+export default about;
