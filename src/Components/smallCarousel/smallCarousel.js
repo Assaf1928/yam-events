@@ -9,7 +9,7 @@ const smallCarousel = () => {
    
     return (
         <div className={classes.img__div}>
-          
+          smallCarousel
         </div>
     )
 }

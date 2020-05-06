@@ -1,6 +1,33 @@
 .about__div{
-    background-color: #86a6b3;
+    background-color:#ffffff;
     margin-bottom: 10vh;
-    width: 100vw;
-    height: 100vh;
+    height: 80vh;
+}
+
+
+.about__div .left{
+    
+    display: inline-block;
+    width: 15vw;
+    height: 85vh;
+}
+
+
+.about__div .right{
+        
+    display: inline-block;
+    width: 15vw;
+    height: 85vh;
+}
+
+
+.block__div{
+    display: inline-block;
+    position: relative;
+    width: 50%;
+}
+
+.about__div article{
+    position: static;
+    transform: translateY(+50%);
 }
