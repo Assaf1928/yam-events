@@ -5,29 +5,102 @@
 }
 
 
-.about__div .left{
-    
-    display: inline-block;
-    width: 15vw;
-    height: 85vh;
+.row__div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:95vw;
+    margin: 0 auto;
 }
 
+/* .about__div  img{
+    max-width: 20%;
+    height: 60vh ;
+    margin: 0 10px ;
+} 
 
 .about__div .right{
-        
-    display: inline-block;
-    width: 15vw;
-    height: 85vh;
+    margin-top: 20vh;
+}
+*/
+.block__about__div{
+    height: 80vh;
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.block__div{
-    display: inline-block;
-    position: relative;
+.block__about__div article{
+    position: static;
+    text-align: right;
+    font-size: 16px;
+    padding: 0 3vw  ;
+}
+
+ @media screen and (max-width: 1300px) {
+    .about__div article{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .about__div article{
+        font-size: 13px;
+    }
+}
+
+
+
+
+/*grid images*/
+
+
+.grid__div{
+   
+    height: 100%;;
     width: 50%;
 }
 
-.about__div article{
-    position: static;
-    transform: translateY(+50%);
-}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    padding: 0 4px;
+    height: 80vh;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex:50%;
+    max-width: 100%;
+    height: 100%;
+  }
+  
+  .column img {
+    padding:  2% 2%;
+    display: block;
+    height: 25%;
+    width: 100%;
+  }
+  
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 900px) {
+
+    .about__div{
+        height: 160vh;
+    }
+
+    .block__about__div{
+        width: 100%;
+        
+    }
+    .grid__div{
+        width:100vw;
+       
+    }
+   
+  }
