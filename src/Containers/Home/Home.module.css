@@ -19,5 +19,6 @@
 .logo__div{
     height: 100%;
     width: 15%;
+    display: block;
     float: left;
 }

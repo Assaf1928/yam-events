@@ -1,0 +1,23 @@
+.row {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    height: 100%;
+    width:50%;
+    max-width: 100%;
+    
+  }
+  
+  .column img {
+    height: 33%;
+    width: 100%;
+    padding:  2% 2%;
+    display: block;
+  }
+  
+  
