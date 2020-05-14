@@ -1,44 +1,82 @@
-.navigation__Item {
-    margin: 10px 0;
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
+
+
+.container a:hover,
+.container a:active,
+.container a:active {
+    background-color:gray;
 }
 
-.navigation__Item a {
-    color: #8F5C2C;
+.drop__down {
+    float: right;
+    overflow: hidden;
+    /* margin-top:15px; */
+}
+
+
+.drop__down__content {
+    display:none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.drop__down  .drop__btn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+}
+.drop__down__content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
     text-decoration: none;
-    width: 100%;
-    box-sizing: border-box;
+    display: block;
+    text-align: right;
+}
+
+.drop__down:hover .drop__down__content {
     display: block;
 }
 
-.navigation__Item a:hover,
-.navigation__Item a:active,
-.navigation__Item a.active {
-    color: gray;
-}
-
-@media (min-width: 500px) {
-    .navigation__Item {
+@media (max-width: 500px) {
+    .drop__down  .drop__btn {
+        color: black;
+    }
+    .container {
         margin: 0;
         display: flex;
         height: 100%;
         width: auto;
         align-items: center;
     }
-    
-    .navigation__Item a {
-       color:white;
-        height: 100%;
-        padding: 16px 10px;
-        border-bottom: 4px solid transparent;
+
+    .container:hover {
+        padding:12px 12px;
     }
     
-    .navigation__Item a:hover,
-    .navigation__Item a:active,
-    .navigation__Item a.active {
-        background-color:#282828;
-        color: white;
+    .container a {
+       color:black;
+    }
+
+    .drop__down__content {
+        display:none;
+        position: static;
+        background-color: #fff;
+       margin-bottom:2px;
+        min-width: 160px;
+        z-index: 1;
+        border-top:1px solid black;
+        box-shadow: none;
+    }
+    
+    .container a:hover,
+    .container a:active,
+    .container a.active {
+        background-color:white;
     }
 }

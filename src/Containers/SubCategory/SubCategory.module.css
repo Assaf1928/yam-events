@@ -1,0 +1,6 @@
+.cards__container {
+    direction: rtl;
+    width:80%;
+    margin:0 auto;
+    vertical-align:top;
+}
