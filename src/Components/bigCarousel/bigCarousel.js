@@ -2,9 +2,9 @@ import React from 'react';
 
 import classes from './bigCarousel.module.css';
 import {Carousel} from 'react-bootstrap';
-import  img1 from '../../image/bigCarouselImg/2.jpg';
-import  img2 from '../../image/bigCarouselImg/3.jpg';
-import  img4 from '../../image/bigCarouselImg/3.jpg';
+import  img1 from '../../image/bigCarouselImg/1.jpg';
+import  img2 from '../../image/bigCarouselImg/2.jpg';
+import  img4 from '../../image/bigCarouselImg/4.jpg';
 
 
 const bigCarousel = () => {
@@ -13,7 +13,7 @@ const bigCarousel = () => {
         
     return(
         <div className={classes.img__div}>
-            <Carousel>
+            <Carousel controls={false} indicators={false}>
                 <Carousel.Item>
                     <img
                     className="d-block w-100"

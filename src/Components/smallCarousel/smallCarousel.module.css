@@ -4,3 +4,15 @@
     width: 100vw;
     height: 80vh;
 }
+
+
+img{
+    width: 15vw;
+    height: auto;
+}
+.CarouselProvider{
+    height: 50vh;
+}
+.CarouselSlider{
+    height: 50vh;
+}

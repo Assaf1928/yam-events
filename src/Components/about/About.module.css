@@ -1,5 +1,5 @@
 :root{
-    --height-page:69.82vw;
+    --height-page:84vh;
     --width--page:100vw;
 }
 
@@ -13,21 +13,22 @@
 .poly{
     width: 100%;
     height: 100%;
-    padding: 0;
+    padding: 4vh 4vw;
     margin: 0;
     background:
-    linear-gradient(45deg,#d1d1d1 10%, #d1d1d1 30% , #ffffff 45% ,transparent 60%) top /100% 35%,
+    linear-gradient(45deg,#d1d1d1 10%, #d1d1d1 30% , #ffffff 45% ,transparent 60%) top /100% 35.05%,
     linear-gradient(135deg,#d1d1d1 10%, #d1d1d1 30% , #ffffff 45%,transparent 60%)bottom /100% 35%,
-    linear-gradient(90deg,#d1d1d1 20%,#d1d1d1 40% , #ffffff 55%,transparent 70%)center /100% 30.02%;
+    linear-gradient(90deg,#d1d1d1 15%,#d1d1d1 35% , #ffffff 53%,transparent 68%)center /100% 30.05%;
     background-repeat:no-repeat;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    opacity: 0.9;
 }
 
 .text__about__div{
     height: 100%;
-    width: 50%;
+    width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,14 +37,13 @@
 .text__about__div article{
     position: static;
     text-align: right;
-    font-size: 1.1vw;
+    font-size: 1vw;
     padding: 0 5vw ;
 }
 
 .grid__div{
     height: 100%;
-    width: 48%;
-    margin:2% 0;
+    width: 35%;
 }
 
 @media screen and (max-width: 900px) {
@@ -52,17 +52,18 @@
     }
 
     .text__about__div{
-        height: 50%;
-        width: var(--width--page);;
+        height: auto;
+        width: var(--width--page);
     }
 
     .text__about__div article{
-        font-size: 1.8vw;
+        font-size: 3vw;
     }
     
     .grid__div{
-        width:var(--width--page);;
-        height: 50%;
+        width:var(--width--page);
+        height:auto;
+        margin-top: 3vh;
     }
 
     .poly{
