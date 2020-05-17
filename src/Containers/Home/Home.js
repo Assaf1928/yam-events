@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
 import BigCarousel from '../../Components/bigCarousel/bigCarousel';
-import SmallCarousel from '../../Components/smallCarousel/smallCarousel';
 import About from '../../Components/about/About';
+import SmallCarousel from '../../Components/smallCarousel/smallCarousel';
+import classes from './Home.module.css';
 
 
 class Home extends Component {
@@ -13,16 +14,8 @@ class Home extends Component {
       }
 
     render(){
-
-        var layoutStyle={          
-            backgroundColor: '#5d6769',
-            width: '100vw',
-            height: '15vh' 
-        }
-        
         return(
             <div>
-                <div style={layoutStyle}></div>
                 <BigCarousel />
                 <About />
                 <SmallCarousel/>
