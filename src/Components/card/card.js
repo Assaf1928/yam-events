@@ -3,7 +3,7 @@ import classes from './card.module.css'
 import imgex from '../../imgs/examples/4.jpg'
 import Modal from '../UI/modal/modal'
 import Auxiliary from '../../hoc/Auxiliary/Auxiliary'
-import Carousel from 'react-bootstrap/Carousel'
+//import Carousel from 'react-bootstrap/Carousel'
 
 const Card = () => {
     const [show, setShow] = useState(false)
@@ -21,7 +21,7 @@ const Card = () => {
        <div className={classes.item}>
        <Modal show={show} handleClose={() => hideModal()}>
            <div className={classes.carousel__container}>
-       <Carousel>
+       {/* <Carousel>
   <Carousel.Item>
     <img className={classes.carousel__img}
       src={imgex}
@@ -40,7 +40,7 @@ const Card = () => {
       src={imgex}      alt="Third slide"
     />
   </Carousel.Item>
-</Carousel>
+</Carousel> */}
 </div>
         </Modal>
            <img src={imgex} className={classes.card__img}  onClick={showModal}></img>
