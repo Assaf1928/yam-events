@@ -1,15 +1,18 @@
 
 .carousel__container{
     background-color:#F4F4F4;
-    width:50%;
-    height:500px;
-    margin:0 auto;
-    }
+    width:25vw;
+    height:25vw;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
     
-    .size{
-    margin:0 auto;
     }
-    
+    .carousel__img {
+        width:100%;
+        height:auto;
+        max-height:25vw;
+    }
 .item {
     display: inline-block;
     border-radius: 5px;
@@ -25,7 +28,7 @@
     background-color:rgb(172, 163, 152);
     font-weight: 600;
 }
-.item img {
+.card__img {
     border-radius: 5px 5px 0px 0px;
     max-width: 200px;
     max-height: 200px;
@@ -36,7 +39,7 @@
     transition: box-shadow 0.5s linear;
 }
 @media (max-width: 900px) {
-    .cards__container img {
+    .card__img  {
         max-width: 100px;
         max-height: 100px;
     }
