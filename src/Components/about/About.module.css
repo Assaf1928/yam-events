@@ -1,6 +1,77 @@
-.about__div{
-    background-color: #86a6b3;
-    margin-bottom: 10vh;
-    width: 100vw;
-    height: 100vh;
+:root{
+    --height-page:84vh;
+    --width--page:100vw;
 }
+
+
+.about__div{
+    height: var(--height-page) ;
+    width: var(--width--page);
+    margin-bottom: 10vh;
+}
+
+.poly{
+    width: 100%;
+    height: 100%;
+    padding: 4vh 4vw;
+    margin: 0;
+    background:
+    linear-gradient(45deg,#d1d1d1 10%, #d1d1d1 30% , #ffffff 45% ,transparent 60%) top /100% 35.05%,
+    linear-gradient(135deg,#d1d1d1 10%, #d1d1d1 30% , #ffffff 45%,transparent 60%)bottom /100% 35%,
+    linear-gradient(90deg,#d1d1d1 15%,#d1d1d1 35% , #ffffff 53%,transparent 68%)center /100% 30.05%;
+    background-repeat:no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    opacity: 0.9;
+}
+
+.text__about__div{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text__about__div article{
+    position: static;
+    text-align: right;
+    font-size: 1vw;
+    padding: 0 5vw ;
+}
+
+.grid__div{
+    height: 100%;
+    width: 35%;
+}
+
+@media screen and (max-width: 900px) {
+    .about__div{
+        height: var(--height-page)*2;
+    }
+
+    .text__about__div{
+        height: auto;
+        width: var(--width--page);
+    }
+
+    .text__about__div article{
+        font-size: 3vw;
+    }
+    
+    .grid__div{
+        width:var(--width--page);
+        height:auto;
+        margin-top: 3vh;
+    }
+
+    .poly{
+        background: /*d1d1d1*/
+        linear-gradient(45deg,#d1d1d1 10%, #d1d1d1 50% , #ffffff 90% ,transparent 100%) top /100% 35%,
+        linear-gradient(135deg,#d1d1d1 10%, #d1d1d1 50% , #ffffff 90%,transparent 100%)bottom /100% 35%,
+        linear-gradient(90deg,#d1d1d1 20%,#d1d1d1 60% , #ffffff 100%,transparent 100%)center /100% 30.02%;
+        background-repeat:no-repeat;
+    }
+    
+} 

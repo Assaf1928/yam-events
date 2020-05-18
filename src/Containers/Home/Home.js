@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
 import BigCarousel from '../../Components/bigCarousel/bigCarousel';
-import SmallCarousel from '../../Components/smallCarousel/smallCarousel';
 import About from '../../Components/about/About';
+import SmallCarousel from '../../Components/smallCarousel/smallCarousel';
+import classes from './Home.module.css';
 
 
 class Home extends Component {
+
    
     constructor(props) {
         super(props);
@@ -13,19 +15,19 @@ class Home extends Component {
       }
 
     render(){
-
-        var layoutStyle={          
-            backgroundColor: '#5d6769',
-            width: '100vw',
-            height: '15vh' 
-        }
-        
+      
         return(
             <div>
-                <div style={layoutStyle}></div>
+                <div className={classes.layaut}>
+                    <div className={classes.icon__div} >      
+                    </div>
+                    <div className={classes.logo__div}>
+                        <h1>ים אירועים</h1>
+                    </div>
+                </div>
                 <BigCarousel />
-                <About />
-                <SmallCarousel/>
+                <About  />
+                <SmallCarousel />
             </div>
         );
     }
