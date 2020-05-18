@@ -18,8 +18,9 @@ const navigationItems = ( props ) => (
 <div className={classes.container} >
         
         <div className={classes.drop__down}>
+    
         <button className={classes.drop__btn}> כלי הגשה </button>           
-         <div className={classes.drop__down__content}>
+        <div className={classes.drop__down__content}>
                 <a>צלחות</a>
                 <a>כוסות</a>
                 <a>סכום</a>
