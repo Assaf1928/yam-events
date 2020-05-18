@@ -9,7 +9,6 @@ import  img4 from '../../image/bigCarouselImg/4.jpg';
 
 const bigCarousel = () => {
    
-    
         
     return(
         <div className={classes.img__div}>

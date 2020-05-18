@@ -7,8 +7,11 @@ import classes from './Home.module.css';
 
 
 class Home extends Component {
+
+    
    
     render(){
+      
         return(
             <div>
                 <div className={classes.layaut}>
@@ -19,8 +22,8 @@ class Home extends Component {
                     </div>
                 </div>
                 <BigCarousel />
-                <About />
-                <SmallCarousel/>
+                <About  />
+                <SmallCarousel />
             </div>
         );
     }
