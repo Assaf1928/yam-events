@@ -30,10 +30,7 @@ const Card = () => {
   </Carousel.Item>
   <Carousel.Item>
     <img className={classes.carousel__img}
-      src={imgex}      alt="Third slide"
-    />
-
-
+      src={imgex}      alt="Third slide"   />
   </Carousel.Item>
   <Carousel.Item>
     <img className={classes.carousel__img}
