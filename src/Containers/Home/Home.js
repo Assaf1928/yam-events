@@ -9,9 +9,13 @@ import classes from './Home.module.css';
 class Home extends Component {
 
     
+    // a = (event) => {
+    //     console.log(event)
+    //  console.log(event.target.innerHTML == "&#x23f8;" )
+    // }
    
     render(){
-      
+        console.log("esrfgesrfg");
         return(
             <div>
                 <div className={classes.layaut}>
@@ -23,7 +27,7 @@ class Home extends Component {
                 </div>
                 <BigCarousel />
                 <About  />
-                <SmallCarousel />
+                <SmallCarousel pause={(event) => this.a(event)} />
             </div>
         );
     }
