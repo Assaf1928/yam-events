@@ -24,7 +24,7 @@ const Card = () => {
        <Carousel>
   <Carousel.Item>
     <img className={classes.carousel__img}
-      src={imgex}
+      src={imgex} alt="test"
       alt="First slide"
     />
   </Carousel.Item>
@@ -40,7 +40,7 @@ const Card = () => {
 </Carousel>
 </div>
         </Modal>
-           <img src={imgex} className={classes.card__img}  onClick={showModal}></img>
+           <img src={imgex} className={classes.card__img} alt="test" onClick={showModal}></img>
            <div className={classes.item__text}>סכו"ם מעוצב</div>
      </div>
      </Auxiliary>
