@@ -2,9 +2,9 @@ import React from 'react';
 
 import classes from './bigCarousel.module.css';
 import {Carousel} from 'react-bootstrap';
-import  img1 from '../../image/bigCarouselImg/1.jpg';
-import  img2 from '../../image/bigCarouselImg/2.jpg';
-import  img4 from '../../image/bigCarouselImg/4.jpg';
+import  img1 from '../../image/bigCarousel/1.jpg';
+import  img2 from '../../image/bigCarousel/2.jpg';
+import  img4 from '../../image/bigCarousel/4.jpg';
 
 
 const bigCarousel = () => {

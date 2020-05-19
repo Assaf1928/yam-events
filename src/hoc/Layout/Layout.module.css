@@ -1,0 +1,8 @@
+
+.relative {
+    position: relative;
+    min-height: 99vh;
+}
+.relative main {
+    padding-bottom:300px;
+}

@@ -1,0 +1,20 @@
+.toolbar {
+    height: 56px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color:#373737;
+    z-index: 90;
+}
+
+.toolbar nav {
+}
+
+.logo {
+}
+
+@media (max-width: 499px) {
+    .desktop__only {
+        display: none;
+    }
+}
