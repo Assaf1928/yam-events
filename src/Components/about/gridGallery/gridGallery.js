@@ -11,13 +11,13 @@ import  img5 from '../../../image/aboutGallery/8.jpg';
 const gridGallery = () => {
 
     return(  
-        <div class={classes.row}>
-            <div class={classes.column}>
+        <div className={classes.row}>
+            <div className={classes.column}>
                 <img src={img5}/> 
                 <img src={img2}  /> 
                 <img src={img3} /> 
             </div>
-            <div class={classes.column}>
+            <div className={classes.column}>
                 <img src={img4}  /> 
                 <img className={classes.big__img} src={img1} /> 
             </div>

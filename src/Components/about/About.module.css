@@ -16,14 +16,14 @@
     padding: 4vh 4vw;
     margin: 0;
     background:
-    linear-gradient(45deg,#d1d1d1 10%, #d1d1d1 30% , #ffffff 45% ,transparent 60%) top /100% 35.05%,
-    linear-gradient(135deg,#d1d1d1 10%, #d1d1d1 30% , #ffffff 45%,transparent 60%)bottom /100% 35%,
-    linear-gradient(90deg,#d1d1d1 15%,#d1d1d1 35% , #ffffff 53%,transparent 68%)center /100% 30.05%;
+    linear-gradient(45deg,#d1d1d1 20%, #d1d1d1 40% , #ffffff 65% ,transparent 80%) top /100% 35.05%,
+    linear-gradient(135deg,#d1d1d1 20%, #d1d1d1 40% , #ffffff 65%,transparent 80%)bottom /100% 35%,
+    linear-gradient(90deg,#d1d1d1 25%,#d1d1d1 55% , #ffffff 73%,transparent 88%)center /100% 30.05%;
     background-repeat:no-repeat;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
 .text__about__div{

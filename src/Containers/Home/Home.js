@@ -21,13 +21,19 @@ class Home extends Component {
         state = {
             bigCarouselImages: []
         }
+   
+    constructor(props) {
+        super(props);
+        this.inputRef = React.createRef();
+      }
+
 
     render(){
         return(
             <div>
                 <BigCarousel data={this.state.bigCarouselImages} />
                 <About  />
-                <SmallCarousel />
+                <SmallCarousel pause={(event) => this.a(event)} />
             </div>
         );
     }
