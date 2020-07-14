@@ -38,9 +38,9 @@ const Card = (props) => {
     />
   </Carousel.Item>
 </Carousel>
-</div>
+</div> 
         </Modal>
-           <img src={props.img} className={classes.card__img} alt="test" onClick={showModal}></img>
+           <img src={imgex /*props.img */} className={classes.card__img} alt="test" onClick={showModal}></img>
            <div className={classes.item__text}>סכו"ם מעוצב</div>
      </div>
      </Auxiliary>
