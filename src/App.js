@@ -9,10 +9,11 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route path="/category" component={subCategory}></Route>
-        <Route path="/home" component={Home}></Route>
+      <Route path="/category" component={subCategory}></Route>
+      <Route path="/home" component={Home}></Route>
+
       </Switch> 
-    </div>
+         </div>
   );
 }
 

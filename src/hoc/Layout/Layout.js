@@ -7,8 +7,19 @@ import SideDrawer from '../../Components/navigation/sideDrawer/sideDrawer'
 class Layout extends Component {
 
     state = {
-    showSideDrawer: false
+        showSideDrawer: false,
+        ToolbarTop: false
     }
+
+
+    componentDidMount(){
+        window.addEventListener('scroll',() => {
+            const ToolbarIsTop = window.scrollY < 100;
+            console.log(ToolbarIsTop);
+            this.setState({ ToolbarTop: ToolbarIsTop });
+        });
+    }
+
     sideDrawerClosedHandler = () => {
         this.setState( { showSideDrawer: false } );
     }
@@ -25,6 +36,7 @@ class Layout extends Component {
             <Axuiliary>
                   <Toolbar
                     drawerToggleClicked={this.sideDrawerToggleHandler} 
+                    isTop={this.state.ToolbarTop}
                     />
                 <SideDrawer
                     open={this.state.showSideDrawer}
