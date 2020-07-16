@@ -7,11 +7,11 @@ import  img2 from '../../image/bigCarousel/2.jpg';
 import  img4 from '../../image/bigCarousel/4.jpg';
 
 
-const bigCarousel = () => {
+const bigCarousel = (props) => {
    
-        
+        console.log(props.isTop);
     return(
-        <div className={classes.img__div}>
+        <div className={(props.isTop == false)? classes.img__div: classes.top_img__div}>
             <Carousel controls={false} indicators={false}>
                 <Carousel.Item>
                     <img

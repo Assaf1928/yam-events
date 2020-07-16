@@ -8,14 +8,14 @@ class Layout extends Component {
 
     state = {
         showSideDrawer: false,
-        ToolbarTop: false
+        ToolbarTop: true
     }
 
 
     componentDidMount(){
         window.addEventListener('scroll',() => {
-            const ToolbarIsTop = window.scrollY < 100;
-            console.log(ToolbarIsTop);
+            const ToolbarIsTop = window.scrollY == 0 ;
+            if(this.state.ToolbarTop !== ToolbarIsTop)
             this.setState({ ToolbarTop: ToolbarIsTop });
         });
     }

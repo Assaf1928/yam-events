@@ -1,4 +1,5 @@
 .navigation__items {
+    width: 80vw;
     direction: rtl;
     overflow: hidden;
     background-color: #373737;
@@ -13,6 +14,11 @@
     width:160px;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+.navigation__items   a:hover {
+    background-color: #373737;
+    color: white;
 }
 
 @media (max-width: 500px) {
