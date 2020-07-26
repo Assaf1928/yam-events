@@ -1,0 +1,38 @@
+body{
+    background: #ced1d6;
+}
+
+.container_header{
+    background-color: #86a6b3;
+    width: 100vw;
+    height: 50vw;
+    top: 20vh;
+
+}
+
+
+.container_header_top{
+    background-color: #86a6b3;
+    width: 100vw;
+    height: 50vw;
+    top: 8vh;
+    position: sticky;
+    z-index: -1;
+}
+
+
+    .img_back{
+        width: 100vw;
+        height: auto;
+        border: 0;
+
+    }
+
+  
+    
+
+    .text:scrol
+
+    .text h1{
+        opacity: 1;
+    }

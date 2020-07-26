@@ -1,7 +1,7 @@
 .toolbarTop {
     direction: rtl;
     position: sticky;
-    height: 7.5vh;
+    height: 8vh;
     width: 100%;
     top: 0;
     right: 0;
@@ -10,21 +10,21 @@
     z-index: 90;
 }
 
-.toolbarTop .logo{
-    width: 20vw;
-    color: white;
-}
+    .toolbarTop .logo{
+        width: 20vw;
+        color: white;
+    }
 
-.toolbarTop .desktop__only{
-    width: 80vw;
-} 
+    .toolbarTop .desktop__only{
+        width: 80vw;
+        height: 100%;
+    } 
  
 .toolbar {
     direction: rtl;
-    position: sticky;
-    height: 15vh;
+    position: static;
+    height: 20vh;
     width: 100%;
-    top: 0;
     right: 0;
     background-color:#373737;
     display: flex;
@@ -33,16 +33,20 @@
 }
 
 
-.toolbar .logo{
-    width: 100vw;
-    color: white;
-    text-align: center;
-}
+    .toolbar .logo{
+        width: 100vw;
+        height: 100%;
+        color: white;
+        text-align: center;
+        height: 12vh;
+    }
 
-.toolbar .desktop__only{
-    width: 80vw;
-    margin: auto;
-} 
+    .toolbar .desktop__only{
+        width: 80vw;
+        height: 8vh;
+        margin: auto;
+        
+    } 
 
 
 @media (max-width: 499px) {

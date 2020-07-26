@@ -13,10 +13,15 @@ class Layout extends Component {
 
 
     componentDidMount(){
+        let scrollY = window.scrollY;
         window.addEventListener('scroll',() => {
-            const ToolbarIsTop = window.scrollY == 0 ;
-            if(this.state.ToolbarTop !== ToolbarIsTop)
-            this.setState({ ToolbarTop: ToolbarIsTop });
+            if(scrollY < ((window.innerHeight/100))){
+                scrollY =  window.scrollY - ((window.innerHeight/100)*12);
+                this.setState({ ToolbarTop: true });
+            }else{
+                scrollY = window.scrollY;
+                this.setState({ ToolbarTop: false });
+            }
         });
     }
 

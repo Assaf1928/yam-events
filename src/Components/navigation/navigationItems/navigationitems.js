@@ -15,34 +15,31 @@ const navigationItems = ( props ) => (
         <NavLink to={'/category'}  activeClassName={classes.active}>קטגוריה</NavLink>
         </div>
         <div className={classes.container} >
-                
-                <div className={classes.drop__down}>
-            
+            <div className={classes.drop__down}>
                 <button className={classes.drop__btn}> כלי הגשה </button>           
                 <div className={classes.drop__down__content}>
-                        <a href="#">צלחות</a>
-                        <a href="#">כוסות</a>
-                        <a href="#">סכום</a>
-                        <a href="#">קערות בר</a>
-                        <a href="#">קערות הגשה</a>
-                        <a href="#">סלטרום</a>
-                        <a href="#">שפינגום</a>
-                        <a href="#">סירום</a>
-                        <a href="#">מגשי פינוי</a>
-                        </div>
-                            </div>
+                    <a href="#">צלחות</a>
+                    <a href="#">כוסות</a>
+                    <a href="#">סכום</a>
+                    <a href="#">קערות בר</a>
+                    <a href="#">קערות הגשה</a>
+                    <a href="#">סלטרום</a>
+                    <a href="#">שפינגום</a>
+                    <a href="#">סירום</a>
+                    <a href="#">מגשי פינוי</a>
+                </div>
             </div>
-            <div className={classes.container} >
-                
-                <div className={classes.drop__down}>
+        </div>
+        <div className={classes.container} >
+            <div className={classes.drop__down}>
                 <button className={classes.drop__btn}> ריהוט </button>           
                 <div className={classes.drop__down__content}>
-                        <a href="#">שולחנות</a>
-                        <a href="#">כסאות</a>
-                        <a href="#">מזנונים</a>
-                        </div>
-                            </div>
+                    <a href="#">שולחנות</a>
+                    <a href="#">כסאות</a>
+                    <a href="#">מזנונים</a>
+                </div>
             </div>
+        </div>
 
 
             <div className={classes.container} >

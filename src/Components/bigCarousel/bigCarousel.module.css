@@ -3,7 +3,7 @@
     margin-bottom: 15vh;
     width: 100vw;
     height: 50vw;
-    top: 15vh;
+    top: 20vh;
     z-index: -1;
     position: static;
    
@@ -13,7 +13,7 @@
     margin-bottom: 15vh;
     width: 100vw;
     height: 50vw;
-    top: 7.5vh;
+    top: 8vh;
     z-index: -1;
     position: sticky;
 }

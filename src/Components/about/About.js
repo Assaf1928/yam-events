@@ -6,12 +6,13 @@ import classes from './About.module.css';
 const about = () => {
 
     return (
-        <div className={classes.about__div}>
-           <div className={classes.poly}>
+        <div className={classes.about__div_container}>
+           <div className={classes.about__div}>
+               <div className={classes.polygon}>123</div>
+               <div className={classes.polygon}>123</div>
                 <div className={classes.text__about__div}>
                     <article>
                         <p>
-                           
                         <br/>
                         <b> ים אירועים</b>
                         <br/>
