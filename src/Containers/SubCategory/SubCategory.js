@@ -13,8 +13,15 @@ class SubCategory extends Component {
 
         componentDidMount() {
             const urlParams = new URLSearchParams(window.location.search);
-            const url = new URL(`http:/localhost:3000/sub?id=${urlParams.get('id')}&subId=${urlParams.get('subId')}`)
-            axios.get(url)
+            const url = new URL("http:/localhost:3001/category")
+
+            axios.get('/sub', {
+                params: {
+                    id: urlParams.get('id'),
+                    subId: urlParams.get('subId')
+
+                }
+            })
             .then(res => 
                 {
                     this.setState({data: res.data.files, path: res.data.path})
@@ -32,6 +39,7 @@ render() {
     cards = this.state.data.map(img => {
         console.log(this.state.path + img)
         let url =  this.state.path + img;
+        console.log(url)
         return (<Card img={url}/>)
     })
 }

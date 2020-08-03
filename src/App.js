@@ -15,7 +15,7 @@ function App() {
       <Route path="/home" component={Home}></Route>
 
       </Switch> 
-         </div>
+    </div>
   );
 }
 

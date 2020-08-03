@@ -24,23 +24,23 @@ const Card = (props) => {
        <Carousel>
   <Carousel.Item>
     <img className={classes.carousel__img}
-      src={imgex} alt="test"
+      src={props.img} alt="test"
       alt="First slide"
     />
   </Carousel.Item>
   <Carousel.Item>
     <img className={classes.carousel__img}
-      src={imgex}      alt="Third slide"   />
+      src={props.img}      alt="Third slide"   />
   </Carousel.Item>
   <Carousel.Item>
     <img className={classes.carousel__img}
-      src={imgex}      alt="Third slide"
+      src={props.img}      alt="Third slide"
     />
   </Carousel.Item>
 </Carousel>
 </div> 
         </Modal>
-           <img src={imgex /*props.img */} className={classes.card__img} alt="test" onClick={showModal}></img>
+           <img src={props.img /*props.img */} className={classes.card__img} alt="test" onClick={showModal}></img>
            <div className={classes.item__text}>סכו"ם מעוצב</div>
      </div>
      </Auxiliary>

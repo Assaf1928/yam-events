@@ -6,12 +6,12 @@ const app = express();
 
 const data = [{
     id:1,
-    name: 'servingDishes',
-    path: '../src/image/subCategory/servingDishes/',
-    clientNeededPath: 'src/image/subCategory/servingDishes/',
+    name: 'alternativeEquipment',
+    path: '../src/image/subCategory/alternativeEquipment/',
+    clientNeededPath: 'src/image/subCategory/alternativeEquipment/',
     subs: [{
         id:1,
-        name: 'cups/', //folder name
+        name: 'beanbag/', //folder name
     }, {
         id:2,
         name:'cutlery/'
@@ -27,6 +27,7 @@ router.get('/category', async (req,res) => {
       try {
         await  fs.readdir('../src/image/bigCarousel', (err, files) => {
             res.status(201).send(files)
+            console.log(files);
         });
         } catch(e) {
             res.status(400).send(e)
@@ -45,13 +46,17 @@ router.get('/sub', async (req,res) => {
     // e.x. C:/Users/asaf/Desktop/yam-events/ -- > base url
     var publicDir = require('path').join(__dirname,'/public');
     app.use(express.static(publicDir));
-        console.log(publicDir)
-        console.log(publicDir)
+
     let baseUrl  = __dirname.replace(/\\/g, "/");
-    baseUrl = baseUrl.replace("backend/routers","");
-    console.log(baseUrl)
+    baseUrl = baseUrl.replace("server/routers","");
+  //  console.log(baseUrl)
+    baseUrl = (require('path').resolve(__dirname, '../../'))
+    //console.log(require('path').resolve(__dirname, '../../'))
+    console.log(baseUrl + "/" + category.clientNeededPath + sub.name)
     await  fs.readdir(category.path + sub.name, (err, files) => {
-        res.status(201).send({files, path: baseUrl + category.clientNeededPath + sub.name})
+        // res.status(201).send({files, path:   baseUrl + category.clientNeededPath + sub.name})
+        res.status(201).send({files, path:  "http://127.0.0.1:8887/alternativeEquipment/" + sub.name})
+      //  console.log(baseUrl + category.clientNeededPath + sub.name)
     });
     } catch(e){
         res.status(400).send(e)

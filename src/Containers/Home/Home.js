@@ -8,7 +8,7 @@ import axios from 'axios'
 class Home extends Component {
 
     componentDidMount() {
-        const url = new URL("http:/localhost:3000/category")
+        const url = new URL("http:/localhost:3001/category")
         axios.get(url)
         .then(res => 
             {
