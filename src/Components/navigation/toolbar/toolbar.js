@@ -7,7 +7,9 @@ import DrawerToggle from '../sideDrawer/drawerToggle/drawerToggle';
 const toolbar = ( props ) => (
    <header className={(props.isTop !== true)? classes.toolbarTop: classes.toolbar}>
         <div className={classes.logo}>
-            Logo goes here sadsas
+           <div className={classes.img}>
+               <h1>ים אירועים</h1>
+           </div>
         </div>
         {/* <DrawerToggle clicked={props.drawerToggleClicked} /> */}
         <nav className={classes.desktop__only}>
