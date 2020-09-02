@@ -13,8 +13,9 @@
 
     .about__div{
         width: 80%;
-        height: 80%;
+        height: 100%;
         margin: 0 auto;
+        margin-bottom: 100px;
         display: flex;
         flex-direction: row;
         background-color: white;
@@ -63,7 +64,8 @@
 
 @media screen and (max-width: 1023px) {
     .about__div{
-        height: var(--height-page)*2;
+        height: var(--height-page)/2;
+        overflow-y:scroll;
     }
 
     .text__about__div{
@@ -72,7 +74,7 @@
     }
 
     .text__about__div article{
-        font-size: 3vw;
+        font-size: 15px;
     }
     
     .grid__div{

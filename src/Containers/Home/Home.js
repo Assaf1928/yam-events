@@ -1,19 +1,31 @@
 import React, { Component } from 'react';
-
+import classes from './Home.module.css'
 import BigCarousel from '../../Components/bigCarousel/bigCarousel';
 import Header from '../../Components/header/header';
 import Welcome from '../../Components/welcome/welcome';
 import About from '../../Components/about/About';
 import SmallCarousel from '../../Components/smallCarousel/smallCarousel';
-import classes from './Home.module.css';
-
+import axios from 'axios'
 
 class Home extends Component {
 
-    state = {
-        isTop: true,
-    } 
+    componentDidMount() {
+        const url = new URL("http:/localhost:3001/category")
+        axios.get(url)
+        .then(res => 
+            {
+               this.setState({ bigCarouselImages: res.data})
+               console.log(this.state.bigCarouselImages)
+            }).catch(err => console.log(err))
+        }
+           
 
+        state = {
+            bigCarouselImages: [],
+            isTop: true,
+
+        }
+   
     constructor(props) {
         super(props);
         this.inputRef = React.createRef();
