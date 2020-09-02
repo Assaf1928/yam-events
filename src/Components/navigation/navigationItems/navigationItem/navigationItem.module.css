@@ -11,6 +11,9 @@
     /* margin-top:15px; */
 }
 
+.container{
+    width: 100%;
+}
 
 .drop__down__content {
     display:none;

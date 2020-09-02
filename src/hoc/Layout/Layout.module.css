@@ -4,5 +4,5 @@
     min-height: 99vh;
 }
 .relative main {
-    padding-bottom:300px;
+    padding:0 0 10vh 0!important;
 }

@@ -15,46 +15,43 @@ const navigationItems = ( props ) => (
         <NavLink to={'/category'}  activeClassName={classes.active}>קטגוריה</NavLink>
         </div>
         <div className={classes.container} >
-                
-                <div className={classes.drop__down}>
-            
+            <div className={classes.drop__down}>
                 <button className={classes.drop__btn}> כלי הגשה </button>           
                 <div className={classes.drop__down__content}>
-                        <a>צלחות</a>
-                        <a>כוסות</a>
-                        <a>סכום</a>
-                        <a>קערות בר</a>
-                        <a>קערות הגשה</a>
-                        <a>סלטרום</a>
-                        <a>שפינגום</a>
-                        <a>סירום</a>
-                        <a>מגשי פינוי</a>
-                        </div>
-                            </div>
+                    <a href="#">צלחות</a>
+                    <a href="#">כוסות</a>
+                    <a href="#">סכום</a>
+                    <a href="#">קערות בר</a>
+                    <a href="#">קערות הגשה</a>
+                    <a href="#">סלטרום</a>
+                    <a href="#">שפינגום</a>
+                    <a href="#">סירום</a>
+                    <a href="#">מגשי פינוי</a>
+                </div>
             </div>
-            <div className={classes.container} >
-                
-                <div className={classes.drop__down}>
+        </div>
+        <div className={classes.container} >
+            <div className={classes.drop__down}>
                 <button className={classes.drop__btn}> ריהוט </button>           
                 <div className={classes.drop__down__content}>
-                        <a>שולחנות</a>
-                        <a>כסאות</a>
-                        <a>מזנונים</a>
-                        </div>
-                            </div>
+                    <a href="#">שולחנות</a>
+                    <a href="#">כסאות</a>
+                    <a href="#">מזנונים</a>
+                </div>
             </div>
+        </div>
 
 
             <div className={classes.container} >
                 <div className={classes.drop__down}>
                 <button className={classes.drop__btn}> ציוד אלטרנטיבי </button>           
                 <div className={classes.drop__down__content}>
-                        <a>פרוסונים</a>
-                        <a>אוהלים</a>
-                        <a>כריות</a>
-                        <a>מחצלות</a>
-                        <a>אדומים</a>
-                        <a>פנפום</a>
+                        <a href="#">פוטונים</a>
+                        <a href="#">אוהלים</a>
+                        <a href="#">כריות</a>
+                        <a href="#">מחצלות</a>
+                        <a href="#">אדומים</a>
+                        <a href="#">פנפום</a>
                         </div>
                             </div>
             </div>
@@ -62,12 +59,12 @@ const navigationItems = ( props ) => (
                 <div className={classes.drop__down}>
                 <button className={classes.drop__btn}> ציוד נלווה </button>           
                 <div className={classes.drop__down__content}>
-                        <a>שמשיות</a>
-                        <a>מיזוג</a>
-                        <a>פרגודים</a>
-                        <a>אוהלים</a>
-                        <a>מפות ומפיות</a>
-                        <a>כלי חימום וקירור</a>
+                        <a href="#">שמשיות</a>
+                        <a href="#">מיזוג</a>
+                        <a href="#">פרגודים</a>
+                        <a href="#">אוהלים</a>
+                        <a href="#">מפות ומפיות</a>
+                        <a href="#">כלי חימום וקירור</a>
                         </div>
             </div>
         </div>

@@ -36,20 +36,12 @@ const smallCarousel = (props) => {
                 <ButtonBack className={classes.ButtonBack} >&#60;</ButtonBack>
                 
                 <Slider  className={classes.Slider} >
-
-                {/* <Slide index={0}> <ImageWithZoom src={img5}/>  </Slide>
-                  <Slide index={1}> <ImageWithZoom src={img5}/> </Slide>
-                  <Slide index={2}> <ImageWithZoom src={img5}/> </Slide>
-                  <Slide index={3}> <ImageWithZoom src={img5}/> </Slide>
-                  <Slide index={4}> <ImageWithZoom src={img5}/> </Slide>
-                  <Slide index={5}> <ImageWithZoom src={img5}/> </Slide> */}
-
-                  <Slide index={0}> <img src={img3}/> <p>0</p></Slide>
-                  <Slide index={1}> <img src={img2}/><p>1</p></Slide>
-                  <Slide index={2}> <img src={img3}/><p>2</p></Slide>
-                  <Slide index={3}> <img src={img4}/><p>3</p></Slide>
-                  <Slide index={4}> <img src={img5}/><p>4</p> </Slide>
-                  <Slide index={5}> <img src={img3}/><p>5</p></Slide>
+                  <Slide index={0} className={classes.Slide}> <img src={img3}/> <p>0</p></Slide>
+                  <Slide index={1} className={classes.Slide}> <img src={img2}/><p>1</p></Slide>
+                  <Slide index={2} className={classes.Slide}> <img src={img3}/><p>2</p></Slide>
+                  <Slide index={3} className={classes.Slide}> <img src={img4}/><p>3</p></Slide>
+                  <Slide index={4} className={classes.Slide}> <img src={img5}/><p>4</p> </Slide>
+                  <Slide index={5} className={classes.Slide}> <img src={img3}/><p>5</p></Slide>
                 </Slider>
               
                 <ButtonNext className={classes.ButtonNext}>&#62;</ButtonNext> 

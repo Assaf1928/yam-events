@@ -13,9 +13,10 @@ function App() {
       <Switch>
       <Route path="/category" component={subCategory}></Route>
       <Route path="/home" component={Home}></Route>
+      <Route exact path="/" component={Home}></Route>
 
       </Switch> 
-    </div>
+         </div>
   );
 }
 
