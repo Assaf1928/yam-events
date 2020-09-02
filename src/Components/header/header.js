@@ -7,9 +7,7 @@ const header = (props) => {
 console.log(props.scrollingUp);
     return(
         <div className={ (props.isTop !== true) ? classes.container_header: classes.container_header_top}>
-            
             <img className={classes.img_back}  src={img4} />
-            
         </div>
     );
 }

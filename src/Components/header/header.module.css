@@ -3,18 +3,18 @@ body{
 }
 
 .container_header{
-    background-color: #86a6b3;
+    background-color: #ced1d6;
     width: 100vw;
-    height: 50vw;
+    height: 80vw;
     top: 20vh;
 
 }
 
 
 .container_header_top{
-    background-color: #86a6b3;
+    background-color: #ced1d6;
     width: 100vw;
-    height: 50vw;
+    height: 80vw;
     top: 8vh;
     position: sticky;
     z-index: -1;
@@ -29,10 +29,30 @@ body{
     }
 
   
-    
-
-    .text:scrol
 
     .text h1{
         opacity: 1;
     }
+
+
+
+    @media screen and (max-width: 1024px) {
+    .img_back{
+        /* width: auto;
+        height: 80vh;
+        border: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+        width: auto;
+        height: 120vw;
+        border: 0;
+        position: absolute;
+        top: 50%;
+        left: -50%;
+        transform: rotate(90deg);
+      
+        
+    }
+}

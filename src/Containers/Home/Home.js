@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import BigCarousel from '../../Components/bigCarousel/bigCarousel';
 import Header from '../../Components/header/header';
+import Welcome from '../../Components/welcome/welcome';
 import About from '../../Components/about/About';
 import SmallCarousel from '../../Components/smallCarousel/smallCarousel';
 import classes from './Home.module.css';
@@ -32,15 +33,9 @@ class Home extends Component {
     render(){
         return(
             <div>
-                {
-                /* <BigCarousel isTop={this.state.isTop} /> */}
+                {/* <BigCarousel isTop={this.state.isTop} /> */}
                 <Header isTop={this.state.isTop}/>
-                <div className={classes.text}  >
-                    <h1>ברוכים הבאים</h1>
-                    <h3>ים אירועים</h3>
-                    <h5>השכרת ציוד לאירועים</h5>
-                    <div className={classes.arrow}>&#8675;</div>
-                </div>
+                <Welcome/>
                 <About  />
                 <SmallCarousel pause={(event) => this.a(event)} />
             </div>
