@@ -5,19 +5,24 @@
   "secure": false,
   "private": true,
   "dependencies": {
+    "@openfonts/amatic-sc_hebrew": "^1.44.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
+    "get-google-fonts": "^1.2.2",
+    "googleapis": "^59.0.0",
     "i": "^0.3.6",
     "pure-react-carousel": "^1.27.1",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
+    "react-google-font-loader": "^1.1.0",
     "react-icons": "^3.10.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "typeface-amatic-sc": "0.0.72"
   },
   "scripts": {
     "server": " cd ./server && nodemon index.js",
