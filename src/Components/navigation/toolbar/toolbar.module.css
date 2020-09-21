@@ -1,6 +1,6 @@
 .toolbarTop {
     direction: rtl;
-    position: sticky;
+    position: fixed;
     height: 8vh;
     width: 100%;
     top: 0;
@@ -31,7 +31,6 @@
  
 .toolbar {
     direction: rtl;
-    position: static;
     height: 20vh;
     width: 100%;
     right: 0;
@@ -59,7 +58,7 @@
 
     .toolbar .desktop__only{
         width: 80vw;
-        height: 8vh;
+        height: 100%;
         margin: auto;
         
     } 

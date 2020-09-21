@@ -1,98 +1,85 @@
-.small__carousel{
-    background-color:rgba(0, 0, 0, 0.781);
-    margin-bottom: 10vh;
-    width: 99vw;
-    height: 50vh;
-    border-top:5px solid white;
-    border-bottom: 5px solid white;
+.small__carousel {
+  background-color: rgba(0, 0, 0, 0.781);
+  width: 99vw;
+  height: 50vh;
+  margin: 16vh 0;
 }
 
-
-
-img{
-    width: 30vh;
-    height: auto;
-    border-radius: 5px;
-    border: 1px solid #fff;
-
+img {
+  width: 30vh;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #fff;
 }
 
-.title{
-    height: 10vh;
+.title {
+  height: 10vh;
 }
 
-.container__carousel{
-    height: 40vh;
-   
+.container__carousel {
+  height: 40vh;
 }
 
-    .container__carousel .CarouselProvider{
-        width: 95%;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-    }
+.container__carousel .CarouselProvider {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 
-        .container__carousel .CarouselProvider .Slider{
-            width: 100%;
-        }
+.container__carousel .CarouselProvider .Slider {
+  width: 100%;
+}
 
-            .container__carousel .CarouselProvider .Slider .Slide{
-                width: auto;
-                height: 100%;
-            }
+.container__carousel .CarouselProvider .Slider .Slide {
+  width: auto;
+  height: 100%;
+}
 
-            .container__carousel .CarouselProvider .ButtonBack{
-                width: 50px;
-                
-                font-weight: bold;
-                outline:none;
-                color:white;
-                font-size:20px;
-                background-color:black;
-                border-radius:50px;
-                height: 5vh;
-            }
+.container__carousel .CarouselProvider .ButtonBack {
+  width: 50px;
 
-            .container__carousel .CarouselProvider .ButtonNext{
-                width: 50px;
-                
-                font-weight: bold;
-                outline:none;
-                color:white;
-                font-size:20px;
-                border-radius:50px;
-                background-color:black;
-                height: 5vh;
-            }
-            .Slider img {
-                border:3px solid white;
-            }
+  font-weight: bold;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  background-color: black;
+  border-radius: 50px;
+  height: 5vh;
+}
 
+.container__carousel .CarouselProvider .ButtonNext {
+  width: 50px;
 
-            @media screen and (max-width: 900px) {
-                .container__carousel .CarouselProvider .ButtonNext {
-                    display: none;
-                }
-                .container__carousel .CarouselProvider .ButtonBack {
-                    display: none;
-                }
+  font-weight: bold;
+  outline: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 50px;
+  background-color: black;
+  height: 5vh;
+}
+.Slider img {
+  border: 3px solid white;
+}
 
-                .small__carousel{
+@media screen and (max-width: 900px) {
+  .container__carousel .CarouselProvider .ButtonNext {
+    display: none;
+  }
+  .container__carousel .CarouselProvider .ButtonBack {
+    display: none;
+  }
 
-                    height: 300px;
-                    
+  .small__carousel {
+    height: 300px;
+  }
 
-                }
-
-                .Slider img {
-                border:none;
-                    width:180px;
-                    height:180px;
-            }
-                
-            
-            
-            }
+  .Slider img {
+    border: none;
+    width: 180px;
+    height: 180px;
+  }
+}

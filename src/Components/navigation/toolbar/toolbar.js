@@ -5,8 +5,11 @@ import NavigationItems from "../navigationItems/navigationitems";
 import DrawerToggle from "../sideDrawer/drawerToggle/drawerToggle";
 //import Header from '../../Header/Header'   <div>
 const toolbar = (props) => (
+  // <header
+  //   className={props.isTop !== true ? classes.toolbarTop : classes.toolbar}
+  // >
   <header
-    className={props.isTop !== true ? classes.toolbarTop : classes.toolbar}
+    className= {classes.toolbarTop }
   >
     <div className={classes.logo}>
       <div className={classes.img}>

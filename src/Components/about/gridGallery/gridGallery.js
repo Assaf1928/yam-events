@@ -16,19 +16,7 @@ const gridGallery = () => {
                 <img src={img4}  /> 
                 <img src={img3} /> 
                 <img className={classes.big__img} src={img2}  /> 
-        </div>         
-
-        /* <div className={classes.row}>
-            <div className={classes.column}>
-                <img src={img5}/> 
-                <img src={img2}  /> 
-                <img src={img3} /> 
-            </div>
-            <div className={classes.column}>
-                <img src={img4}  /> 
-                <img className={classes.big__img} src={img1} /> 
-            </div>
-        </div>*/         
+        </div>        
     );
 }
 

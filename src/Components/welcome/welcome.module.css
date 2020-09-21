@@ -1,4 +1,8 @@
 
+.container_text{
+    height: 92vh;
+}
+
 .text{
     width: 35vw;
     text-align: center;
