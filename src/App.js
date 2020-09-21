@@ -3,10 +3,7 @@ import React from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
 import subCategory from "../src/Containers/SubCategory/SubCategory";
 import Home from "../src/Containers/Home/Home";
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/tzach
 import "./App.css";
 
 function App() {
