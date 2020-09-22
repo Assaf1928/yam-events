@@ -1,0 +1,12 @@
+:root{
+    --color-1: #72777b;
+    --color-background: #ced1d6;
+    --color-3: #fbff07;
+}
+
+
+.center_horizontal{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

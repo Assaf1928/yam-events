@@ -43,7 +43,7 @@ class Home extends Component {
     return (
       <div>
         {/* <BigCarousel isTop={this.state.isTop} /> */}
-        {/* <Header isTop={this.state.isTop}/> */}
+        {/* <Header isTop={this.state.isTop} /> */}
         <Welcome />
         <About />
         <SmallCarousel pause={(event) => this.a(event)} />

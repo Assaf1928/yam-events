@@ -1,7 +1,9 @@
 import React from "react";
 
 import GridGallery from "./gridGallery/gridGallery";
+import generalDesign from "../css/generalDesign.module.css";
 import classes from "./About.module.css";
+
 
 const about = () => {
   return (
@@ -9,7 +11,7 @@ const about = () => {
       <div className={classes.about__div}>
         <div className={classes.polygon}>123</div>
         <div className={classes.text__about__div}>
-          <article className={classes.center}>
+          <article className={generalDesign.center_horizontal}>
             <p>
               <br />
               <b> ים אירועים</b>
