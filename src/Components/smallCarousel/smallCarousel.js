@@ -18,7 +18,7 @@ const smallCarousel = (props) => {
     return (
         <div className={classes.small__carousel}>
 
-          <h1 className={classes.title} >המומלצים</h1>
+          <h1 className={classes.title}></h1>
 
           <div className={classes.container__carousel}>
             <CarouselProvider 
@@ -33,7 +33,7 @@ const smallCarousel = (props) => {
                 className={classes.CarouselProvider}
               >
 
-                <ButtonBack className={classes.ButtonBack} >&#60;</ButtonBack>
+                {/* <ButtonBack className={classes.ButtonBack} >&#60;</ButtonBack> */}
                 
                 <Slider  className={classes.Slider} >
                   <Slide index={0} className={classes.Slide}> <img src={img3}/> <p>0</p></Slide>
@@ -44,7 +44,7 @@ const smallCarousel = (props) => {
                   <Slide index={5} className={classes.Slide}> <img src={img3}/><p>5</p></Slide>
                 </Slider>
               
-                <ButtonNext className={classes.ButtonNext}>&#62;</ButtonNext> 
+                {/* <ButtonNext className={classes.ButtonNext}>&#62;</ButtonNext>  */}
                 
             </CarouselProvider>
           </div>

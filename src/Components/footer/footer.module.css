@@ -1,6 +1,6 @@
 .footer__container {
 width:100%;
-background-color:rgba(0, 0, 0, 0.021);
+background-color:transparent;
 position: absolute;
 bottom: 0;
 clear:both;
@@ -13,7 +13,7 @@ border-bottom: 2px solid rgb(0, 0, 0);
 
 .icons__row {
     margin:0 auto;
-    width:10%;
+    width:20%;
     display:flex;
     justify-content: space-between;
     flex-direction: row;
@@ -23,15 +23,28 @@ border-bottom: 2px solid rgb(0, 0, 0);
 }
 
 .row__item {
-    margin-top:10px;
+    border:2px solid black;
+    
+   height:50px;
+   width:50px;
+   text-align: center;
     margin-bottom: 0px;
+    background-color:rgb(167, 219, 253);
+    transition:background-color 0.3s;
+    border-radius: 50px;
+}
+.row__item:hover{
+    background-color:transparent;
+    transition:background-color 0.3s;
+
 }
 
 @media (max-width: 900px) {
     .icons__row {
-        font-size:20px;
-    }
-    .row {
+        font-size:25px;
         width:80%;
+  
+
     }
+
 }

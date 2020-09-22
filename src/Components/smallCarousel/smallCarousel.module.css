@@ -83,14 +83,12 @@ img{
                 .small__carousel{
 
                     height: 300px;
-                    
-
                 }
 
                 .Slider img {
                 border:none;
-                    width:180px;
-                    height:180px;
+                    width:100px;
+                    height:100px;
             }
                 
             
