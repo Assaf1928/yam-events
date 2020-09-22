@@ -2,9 +2,9 @@ body{
   background-color:  var(--color-background);
   background-image: url("image/bigCarousel/4.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: local;
   background-size:  110% auto;
-  background-position: center;
+  /* background-position: center; */
 
 }
 

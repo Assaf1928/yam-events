@@ -8,9 +8,7 @@ const toolbar = (props) => (
   // <header
   //   className={props.isTop !== true ? classes.toolbarTop : classes.toolbar}
   // >
-  <header
-    className= {classes.toolbarTop }
-  >
+  <header className={classes.toolbarTop}>
     <div className={classes.logo}>
       <div className={classes.img}>
         <h1>ים אירועים</h1>
