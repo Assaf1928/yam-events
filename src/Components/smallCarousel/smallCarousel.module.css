@@ -9,27 +9,28 @@
 
 .small__carousel {
   background-color: #fff;
-  width: 99vw;
-  height: 60%;
+  width: 100%;
+  height: 70%;
   margin: 0;
 }
 
 img {
-  width: 50%;
+  width: 90%;
   height: auto;
   border-radius: 5px;
   border: 1px solid #fff;
 }
 
 .title {
-  height: 20%;
+  height: 0%;
 }
 
 .container__carousel {
-  height: 80%;
+  height: 100%;
+  position: relative;
 }
 
-.container__carousel .CarouselProvider {
+.CarouselProvider {
   width: 100%;
   height: 100%;
   margin: auto;
@@ -44,9 +45,17 @@ img {
   height: 100%;
 }
 
-.container__carousel .CarouselProvider .Slider .Slide {
-  width: auto;
+.container__carousel .CarouselProvider .Slider div {
   height: 100%;
+}
+
+.container__carousel .CarouselProvider .Slider div ul {
+  height: 100%;
+  position: relative;
+}
+.container__carousel .CarouselProvider .Slider ul li {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .container__carousel .CarouselProvider .ButtonBack {
@@ -72,9 +81,7 @@ img {
   background-color: black;
   height: 5vh;
 }
-.Slider img {
-  border: 3px solid white;
-}
+
 /* 
 @media screen and (max-width: 900px) {
   .container__carousel .CarouselProvider .ButtonNext {

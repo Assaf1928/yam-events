@@ -31,14 +31,17 @@ const smallCarousel = (props) => {
         <div className={classes.container__carousel}>
           <CarouselProvider
             totalSlides={6}
-            visibleSlides={3}
+            visibleSlides={4}
             interval={3000}
             isPlaying={true}
             naturalSlideWidth={1}
             naturalSlideHeight={1}
             step={1}
             infinite={false}
-            className={classes.CarouselProvider}
+            className={classNames({
+              [classes.CarouselProvider]: true,
+              [generalDesign.center_horizontal]: true
+            })}
           >
             <ButtonBack className={classes.ButtonBack}>&#60;</ButtonBack>
 
