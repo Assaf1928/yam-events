@@ -1,32 +1,33 @@
 .small__carousel_container {
   width: 100%;
-  height: 92vh;
+  height: 50vh;
   position: relative;
   background-color: var(--color-background);
   border-top: var(--color-3) solid 1px;
-  /* border-bottom: var(--color-3) solid 1px; */
+  border-bottom: var(--color-3) solid 1px;
 }
 
 .small__carousel {
   background-color: #fff;
   width: 100%;
-  height: 70%;
+  height: 90%;
   margin: 0;
 }
 
 img {
-  width: 90%;
+  width: 80%;
   height: auto;
   border-radius: 5px;
-  border: 1px solid #fff;
 }
 
 .title {
-  height: 0%;
+  height: 20%;
 }
 
 .container__carousel {
-  height: 100%;
+  width: 80%;
+  height: 80%;
+  margin: auto;
   position: relative;
 }
 

@@ -27,7 +27,7 @@ const smallCarousel = (props) => {
           [generalDesign.center_horizontal]: true,
         })}
       >
-        <h1 className={classes.title}>המומלצים</h1>
+        <h1 className={classes.title}>הסטים המומלצים שלנו</h1>
         <div className={classes.container__carousel}>
           <CarouselProvider
             totalSlides={6}
