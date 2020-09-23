@@ -1,11 +1,11 @@
-body{
-  background-color:  var(--color-background);
+body {
+  background-color: var(--color-background);
+  background-color: white;
   background-image: url("image/bigCarousel/4.jpg");
   background-repeat: no-repeat;
-  background-attachment: local;
-  background-size:  110% auto;
-  /* background-position: center; */
-
+  background-attachment: initial;
+  background-size: 100vw auto;
+  background-position: center top;
 }
 
 .App {
