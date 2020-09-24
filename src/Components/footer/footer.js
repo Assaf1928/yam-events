@@ -1,6 +1,10 @@
 import React from "react";
 
 import classes from "./footer.module.css";
+import { GrServices } from "react-icons/gr";
+import { AiOutlineClear } from "react-icons/ai";
+import { FaHandsHelping, FaTruckMoving } from "react-icons/fa";
+
 import {
   AiFillFacebook,
   AiFillInstagram,
@@ -11,18 +15,30 @@ import {
 const footer = () => (
   <footer className={classes.footer__container}>
     <div className={classes.icons__row}>
-      <div className={classes.row__item}>
+      <div>
         <AiFillFacebook />
       </div>
-      <div className={classes.row__item}>
+      <div>
         <AiFillInstagram />
       </div>
-      <div className={classes.row__item}>
+      <div>
         <AiFillMail />
       </div>
-      <div className={classes.row__item}>
+      <div>
         <AiFillPhone />
       </div>
+      {/* <div>
+        <GrServices />
+      </div>
+      <div>
+        <AiOutlineClear />
+      </div>
+      <div>
+        <FaHandsHelping />
+      </div>
+      <div>
+        <FaTruckMoving />
+      </div> */}
     </div>
   </footer>
 );
