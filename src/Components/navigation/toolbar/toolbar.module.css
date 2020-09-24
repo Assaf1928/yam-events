@@ -1,72 +1,66 @@
 .toolbarTop {
-    direction: rtl;
-    position: sticky;
-    height: 8vh;
-    width: 100%;
-    top: 0;
-    right: 0;
-    background-color:#373737;
-    display: flex;
-    flex-direction: row-reverse;
-    z-index: 90;
+  direction: rtl;
+  position: fixed;
+  height: 8vh;
+  width: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  z-index: 90;
+  background-color: var(--color-1);
+  border-bottom: var(--color-3) solid 1px;
 }
 
-    .toolbarTop .logo{
-        width: 20vw;
-        /* color: white; */
-    }
-
-    .toolbarTop .logo .img{
-        color: black;
-        width: 18vw;
-        height: auto;
-        margin: 0.5vh auto;
-        /* background-color: white; */
-    } 
-
-    .toolbarTop .desktop__only{
-        width: 80vw;
-        height: 100%;
-    } 
- 
-.toolbar {
-    direction: rtl;
-    position: static;
-    height: 20vh;
-    width: 100%;
-    right: 0;
-    background-color:#373737;
-    display: flex;
-    flex-direction: column;
-    z-index: 90;
+.toolbarTop .logo {
+  width: 20vw;
+  text-align: center;
+  letter-spacing: 1.2px;
 }
 
+.toolbarTop .logo .img {
+  color: black;
+  width: 18vw;
+  height: auto;
+  margin: 0.5vh auto;
+  /* background-color: white; */
+}
 
-    .toolbar .logo{
-        width: 100vw;
-        height: 12vh;
-        /* color: white; */
-        text-align: center;
-    }
+.toolbarTop .desktop__only {
+  width: 80vw;
+  height: 100%;
+}
 
-        .toolbar .logo .img{
-            color: black;
-            width: 300px;
-            height: 11vh;
-            margin: 0.5vh auto;
-            /* background-color: white; */
-        } 
+/* .toolbar {
+  direction: rtl;
+  height: 20vh;
+  width: 100%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 90;
+}
 
-    .toolbar .desktop__only{
-        width: 80vw;
-        height: 8vh;
-        margin: auto;
-        
-    } 
+.toolbar .logo {
+  width: 100vw;
+  height: 100%;
+}
 
+.toolbar .logo .img {
+  color: black;
+  width: 100vw;
+  height: 100%;
+   background-color: white; 
+}
+
+.toolbar .desktop__only {
+  width: 80vw;
+  height: 100%;
+  margin: auto;
+} */
 
 @media (max-width: 499px) {
-    .desktop__only {
-        display: none;
-    }
+  .desktop__only {
+    display: none;
+  }
 }

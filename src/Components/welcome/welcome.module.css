@@ -1,4 +1,9 @@
 
+.container_text{
+    height: 100vh;
+    position: relative;
+}
+
 .text{
     width: 35vw;
     text-align: center;
@@ -6,10 +11,11 @@
     background-color: white;
     opacity: 0.8;
     display: block;
-    top: 30vh;
     float: left;
     border-radius: 0 10px 10px 0 ;
     letter-spacing: 0.8px;
+    border: solid var(--color-3) 2px;
+    border-left: 0;
 }
 
 .arrow{

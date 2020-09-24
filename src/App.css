@@ -1,3 +1,13 @@
+body {
+  background-color: var(--color-background);
+  background-color: white;
+  background-image: url("image/bigCarousel/4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: initial;
+  background-size: 100vw auto;
+  background-position: center top;
+}
+
 .App {
   text-align: center;
 }

@@ -1,10 +1,9 @@
 import React from "react";
-import mainclasses from "./navigationItems.module.css";
-import classes from "../navigationItems/navigationItem/navigationItem.module.css";
+import classes from "./navigationItems.module.css";
 import { NavLink } from "react-router-dom";
 
 const navigationItems = (props) => (
-  <div className={mainclasses.navigation__items}>
+  <div className={classes.navigation__items}>
     <div className={classes.container}>
       <NavLink to={"/"} activeClassName={classes.active}>
         דף ראשי
@@ -15,11 +14,11 @@ const navigationItems = (props) => (
         אודות
       </NavLink>
     </div>
-    <div className={classes.container}>
+    {/* <div className={classes.container}>
       <NavLink to={"/category"} activeClassName={classes.active}>
         קטגוריה
       </NavLink>
-    </div>
+    </div> */}
     <div className={classes.container}>
       <div className={classes.drop__down}>
         <button className={classes.drop__btn}> כלי הגשה </button>

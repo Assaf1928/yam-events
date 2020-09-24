@@ -1,20 +1,17 @@
-body{
-    background: #ced1d6;
-}
 
 .container_header{
-    background-color: #ced1d6;
-    width: 100vw;
-    height: 80vw;
+    background-color: #86a6b3;
+    width: 100%;
+    height: 50vw;
     top: 20vh;
 
 }
 
 
 .container_header_top{
-    background-color: #ced1d6;
-    width: 100vw;
-    height: 80vw;
+    background-color: #86a6b3;
+    width: 100%;
+    height: 50vw;
     top: 8vh;
     position: sticky;
     z-index: -1;
@@ -22,7 +19,7 @@ body{
 
 
     .img_back{
-        width: 100vw;
+        width: 100%;
         height: auto;
         border: 0;
 
@@ -36,7 +33,7 @@ body{
 
 
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1023px) {
     .img_back{
         /* width: auto;
         height: 80vh;

@@ -5,7 +5,7 @@
 
   .row img {
     width: 33% ;
-    max-height: 26.6666666666vh;
+    /* max-height: 26.6666666666vh; */
     height: auto;
     margin: auto ;
     display: inline-block;
@@ -30,89 +30,6 @@
   
   .big__img{
     width: 100%!important;
+    height: auto;
     max-height: 53.333333333vh!important;
   }
-/*   
-
-  @media screen and (max-width: 1100px) {
-    :root{
-      --width--img: 20vh;
-    }
-  }
-
-
-  @media screen and (max-width: 900px) {
-    :root{
-      --width--img: 40vw;
-      --max--width--img:40vw;
-    }
-  } */
-
-/* 
-:root{
-  --width--col: 50%;
-  --height--col: 100%;
-
-  --width--img: 23.333vh;
-  --height--img: var(--width--img);
-
-  --max--width--img: 15vw;
-  --max--height--img: var(--max--width--img);
-
-  --height--big--img: calc(var(--height--img) * 2 );
-  
-  --max--height--big--img: calc(var(--max--height--img) * 2 );
-  
-}
-
-
-.row {
-    height: 100%;
-    width: 100%; 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-  }
-  
-   Create four equal columns that sits next to each other 
-  .column {
-    height:auto;
-    width: var(--width--col);
-    max-width: 100%;
-    margin:  auto auto;
-    padding: 1vw 1vh;
-  }
-  
-  .column img {
-    height: var(--height--img);
-    width: var(--width--img);
-    max-width: var(--max--width--img);
-    max-height: var(--max--height--img);
-    display: block;
-    box-shadow: #111111 5px 5px 5px;
-    border: 1px solid #111111;
-    border-radius: 1px;
-    margin:  1vh auto;
-  }
-  
-  .big__img{
-    width: var(--width--img);
-    height: calc(var(--height--big--img) + 1vh) !important;
-    max-height: calc(var(--max--height--big--img) + 1vh)!important;
-  }
-  
-
-
-  @media screen and (max-width: 1100px) {
-    :root{
-      --width--img: 20vh;
-    }
-  }
-
-
-  @media screen and (max-width: 900px) {
-    :root{
-      --width--img: 40vw;
-      --max--width--img:40vw;
-    }
-  } */

@@ -1,14 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import classes from './bigCarousel.module.css';
-import {Carousel} from 'react-bootstrap';
+import classes from "./bigCarousel.module.css";
+import { Carousel } from "react-bootstrap";
 
 const bigCarousel = (props) => {
-   
-        console.log(props.isTop);
-    return(
-        <div className={(props.isTop == false)? classes.img__div: classes.top_img__div}>
-            {/* <Carousel controls={false} indicators={false}>
+  console.log(props.isTop);
+  return (
+    <div
+      className={props.isTop == false ? classes.img__div : classes.top_img__div}
+    >
+      {/* <Carousel controls={false} indicators={false}>
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
@@ -34,8 +35,8 @@ const bigCarousel = (props) => {
                     <Carousel.Caption />
                 </Carousel.Item>
             </Carousel> */}
-        </div>
-    );
-}
+    </div>
+  );
+};
 
 export default bigCarousel;
