@@ -9,9 +9,7 @@ const smallCarouselCard = (props) => (
     </div>
     </div>
     <div className={classes.footer}>
-        <h2>כותרת</h2>
-        <p>תיאור קצר</p>
-        <button className={classes.btn}> <span>&#8592;</span> צפה בעוד </button>
+   <p>כותרת</p>
     </div>
     
 </div>

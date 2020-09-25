@@ -12,13 +12,9 @@ import generalDesign from "../css/generalDesign.module.css";
 import classes from "./smallCarousel.module.css";
 import classNames from "classnames";
 import SmallCarouselCard from './smallCarouselCard/smallCarouselCard';
-
-import img1 from "../../image/smallCarousel/3.jpg";
 import img2 from "../../image/smallCarousel/6.jpg";
 import img3 from "../../image/smallCarousel/7.jpg";
-import img4 from "../../image/smallCarousel/10.jpg";
-import img5 from "../../image/smallCarousel/8.jpg";
-import smallCarouselCard from "./smallCarouselCard/smallCarouselCard";
+
 
 const smallCarousel = (props) => {
   return (
@@ -33,7 +29,7 @@ const smallCarousel = (props) => {
         <div className={classes.container__carousel}>
           <CarouselProvider
             totalSlides={6}
-            visibleSlides={3}
+            visibleSlides={4}
             interval={3000}
             isPlaying={true}
             naturalSlideWidth={1}
