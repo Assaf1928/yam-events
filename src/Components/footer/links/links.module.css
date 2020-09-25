@@ -1,0 +1,27 @@
+.links_container {
+    margin-right:100px;
+      float:right;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top:30px;
+    }
+    .links_container div {
+    color:rgb(236, 233, 233);
+    margin-left:50px;
+    line-height: 25px;
+    }
+    
+    .links_container ul:before{
+      content:attr(aria-label);
+      color:black;
+      font-weight:bold;
+      margin-left:50px;
+    }
+    .links_container ul {
+    list-style-type: none;
+    }
+    .links_container ul li {
+      text-align: right;
+      cursor: pointer;
+      }
