@@ -27,18 +27,6 @@ const footer = () => (
       <div>
         <AiFillPhone />
       </div>
-      {/* <div>
-        <GrServices />
-      </div>
-      <div>
-        <AiOutlineClear />
-      </div>
-      <div>
-        <FaHandsHelping />
-      </div>
-      <div>
-        <FaTruckMoving />
-      </div> */}
     </div>
     <div className={classes.bottom}>
       <div className={classes.flex_item}>
@@ -48,8 +36,12 @@ const footer = () => (
       <div className={classes.vl}></div>
       </div>
     <div className={classes.flex_item}>
-      asdasdsa
-      
+      <div className={classes.credit}><p>
+@כל הזכויות שמורות לים אירועים
+</p>
+<p>האתר נבנה על ידי אסף שהרבני וצח פוני</p>
+<p>assaf1928@gmail.com</p>
+      </div>
     </div>
     </div>
   </footer>

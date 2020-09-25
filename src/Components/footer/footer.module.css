@@ -34,6 +34,13 @@
   height:200px;
  margin-top:20px;
 }
+
+.credit {
+ margin-top:150px;
+ text-align: right;
+ font-size:13px;
+ font-weight: bold;
+}
 .bottom .flex_item {
 margin-left:80px;
 }
