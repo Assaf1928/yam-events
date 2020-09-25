@@ -21,24 +21,28 @@ import img5 from "../../image/smallCarousel/8.jpg";
 const smallCarousel = (props) => {
   return (
     <div className={classes.small__carousel_container}>
+     
       <div
         className={classNames({
           [classes.small__carousel]: true,
           [generalDesign.center_horizontal]: true,
         })}
       >
-        <h1 className={classes.title}>המומלצים</h1>
+         <h2 className={classes.title}>הסטים המומלצים שלנו</h2>
         <div className={classes.container__carousel}>
           <CarouselProvider
             totalSlides={6}
-            visibleSlides={3}
+            visibleSlides={4}
             interval={3000}
             isPlaying={true}
             naturalSlideWidth={1}
             naturalSlideHeight={1}
             step={1}
             infinite={false}
-            className={classes.CarouselProvider}
+            className={classNames({
+              [classes.CarouselProvider]: true,
+              [generalDesign.center_horizontal]: true,
+            })}
           >
             <ButtonBack className={classes.ButtonBack}>&#60;</ButtonBack>
 

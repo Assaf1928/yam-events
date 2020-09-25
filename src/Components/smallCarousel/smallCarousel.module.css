@@ -1,24 +1,23 @@
 .small__carousel_container {
   width: 100%;
-  height: 92vh;
+  height: 50vh;
   position: relative;
   background-color: var(--color-background);
   border-top: var(--color-3) solid 1px;
-  /* border-bottom: var(--color-3) solid 1px; */
+  border-bottom: var(--color-3) solid 1px;
 }
 
 .small__carousel {
   background-color: #fff;
-  width: 99vw;
-  height: 60%;
+  width: 100%;
+  height: 90%;
   margin: 0;
 }
 
 img {
-  width: 50%;
+  width: 80%;
   height: auto;
   border-radius: 5px;
-  border: 1px solid #fff;
 }
 
 .title {
@@ -26,10 +25,13 @@ img {
 }
 
 .container__carousel {
+  width: 90%;
   height: 80%;
+  margin: auto;
+  position: relative;
 }
 
-.container__carousel .CarouselProvider {
+.CarouselProvider {
   width: 100%;
   height: 100%;
   margin: auto;
@@ -44,37 +46,34 @@ img {
   height: 100%;
 }
 
-.container__carousel .CarouselProvider .Slider .Slide {
-  width: auto;
+.container__carousel .CarouselProvider .Slider div {
   height: 100%;
 }
 
-.container__carousel .CarouselProvider .ButtonBack {
-  display: none;
-  width: 50px;
-  font-weight: bold;
-  outline: none;
-  color: white;
-  font-size: 20px;
-  background-color: black;
-  border-radius: 50px;
-  height: 5vh;
+.container__carousel .CarouselProvider .Slider div ul {
+  height: 100%;
+  position: relative;
+}
+.container__carousel .CarouselProvider .Slider ul li {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.container__carousel .CarouselProvider .ButtonNext {
+.container__carousel .CarouselProvider button {
   display: none;
-  width: 50px;
-  font-weight: bold;
+  width: 5deg;
+  height: 5deg;
   outline: none;
-  color: white;
+  color: black;
   font-size: 20px;
-  border-radius: 50px;
-  background-color: black;
-  height: 5vh;
+  border-radius: 100%;
+  border: 1px solid #111111;
+  background-color: transparent;
+  font-weight:bold ;
 }
-.Slider img {
-  border: 3px solid white;
-}
+
+
+
 /* 
 @media screen and (max-width: 900px) {
   .container__carousel .CarouselProvider .ButtonNext {
