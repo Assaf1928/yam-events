@@ -1,9 +1,6 @@
 import React from "react";
 
 import classes from "./footer.module.css";
-import { GrServices } from "react-icons/gr";
-import { AiOutlineClear } from "react-icons/ai";
-import { FaHandsHelping, FaTruckMoving } from "react-icons/fa";
 
 import {
   AiFillFacebook,
@@ -27,18 +24,6 @@ const footer = () => (
       <div>
         <AiFillPhone />
       </div>
-      {/* <div>
-        <GrServices />
-      </div>
-      <div>
-        <AiOutlineClear />
-      </div>
-      <div>
-        <FaHandsHelping />
-      </div>
-      <div>
-        <FaTruckMoving />
-      </div> */}
     </div>
   </footer>
 );

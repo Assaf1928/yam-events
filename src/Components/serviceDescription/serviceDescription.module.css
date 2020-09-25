@@ -1,0 +1,7 @@
+.serviceDescription_container {
+  height: 25vh;
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+  font-size: 2.1vh;
+}

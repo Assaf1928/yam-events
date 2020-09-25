@@ -1,0 +1,23 @@
+.serviceDescriptionCard_container {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  border-top: solid var(--color-3) 2px;
+  border-left: solid var(--color-3) 2px;
+  position: relative;
+}
+
+.serviceDescriptionCard_container:first-child {
+  border-left: 0;
+}
+
+.serviceDescriptionCard {
+  width: 100%;
+  padding: 0 30px;
+}
+
+.serviceDescriptionCard ul {
+  list-style: none;
+  padding: 0;
+  unicode-bidi: embed;
+}
