@@ -1,10 +1,10 @@
 
   .modal__main {
     position:fixed;  
-      z-index:200;
+    z-index:200;
     background: white;
-    width: 30vw;
-    height: 30vw;
+    width: 25vw;
+    height: 25vw;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);

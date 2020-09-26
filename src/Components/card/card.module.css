@@ -3,11 +3,16 @@
     background-color:#F4F4F4;
     width:25vw;
     height:25vw;
-    justify-content: center;
-    align-items: center;
-    margin: auto auto;
+    position: absolute;
+    bottom:0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
     
     }
+
     .carousel__img {
         width:100%;
         height:auto;
@@ -15,28 +20,40 @@
     }
 .item {
     display: inline-block;
-    border-radius: 5px;
+    border-radius: 3px;
     margin:30px 30px;
-    box-shadow:0px 7px 5px -2px black;
-    transition: box-shadow 0.6s linear;
+    box-shadow:0px 0px 5px 2px rgb(105, 105, 105);
+    transition: box-shadow 0.5s ease-in-out;
+    
 }
 
 .item__text {
-    border-top:0.09rem inset black;
-    padding:10px;
+    margin-top:25px;
+    height:80px;
     border-radius: 0px 0px 5px 5px;
-    background-color:rgb(172, 163, 152);
+    background-color:rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-size:20px;
     font-weight: 600;
+   
+}
+
+.hr {
+    border:1px solid black;
+    width:40%;
+    margin:0 auto;
 }
 .card__img {
     border-radius: 5px 5px 0px 0px;
-    max-width: 200px;
-    max-height: 200px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height:14vw; 
+    width:14vw;
+   background-size: 100% 100%;
 }
 
 .item:hover {
-    box-shadow:0px 0px 5px 2px;
-    transition: box-shadow 0.5s linear;
+    box-shadow:0px 0px 7px 2px black;
 }
 @media (max-width: 900px) {
     .card__img  {

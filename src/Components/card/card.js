@@ -40,8 +40,14 @@ const Card = (props) => {
 </Carousel>
 </div> 
         </Modal>
-           <img src={props.img /*props.img */} className={classes.card__img} alt="test" onClick={showModal}></img>
-           <div className={classes.item__text}>סכו"ם מעוצב</div>
+            <div>
+              <div className={classes.card__img} 
+           alt="test" onClick={showModal} style={{backgroundImage:'url('+props.img+')'}}></div>
+           <div className={classes.item__text}>
+           סכו"ם מעוצב
+          <div className={classes.hr}></div>
+             </div>
+          </div>
      </div>
      </Auxiliary>
       )

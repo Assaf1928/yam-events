@@ -10,9 +10,9 @@ const Modal = ({ handleClose, show, children}) => {
       <Backdrop show={show} clicked={handleClose}/>
       <div className={showHideClassName}>
         <div className={classes.modal__main}>
-          <div className={classes.btn__container}>
+          {/* <div className={classes.btn__container}>
         <button onClick={handleClose}>x</button>
-        </div>
+        </div> */}
           {children}
         </div>
       </div>

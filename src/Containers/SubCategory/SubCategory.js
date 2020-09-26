@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Card from '../../Components/card/card';
 import classes from './SubCategory.module.css'
 import axios from 'axios'
-
+import img1 from '../../imgs/examples/1.jpg'
 class SubCategory extends Component {
 
 
@@ -46,6 +46,7 @@ render() {
     return (
         <div className={classes.cards__container}>
             {console.log(cards)}
+            <Card img={img1}/>
         {cards}
         </div>
     )
