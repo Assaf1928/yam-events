@@ -10,7 +10,7 @@ const welcome = (props) => {
       <div
         className={classNames({
           [classes.text]: true,
-          [generalDesign.center_horizontal]: true,
+          [generalDesign.center_horizontal]: false,
         })}
       >
         <h1>ברוכים הבאים</h1>
