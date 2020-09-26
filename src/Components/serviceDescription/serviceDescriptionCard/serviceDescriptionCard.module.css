@@ -2,7 +2,6 @@
   width: 100%;
   text-align: center;
   height: auto;
-  border-top: solid var(--color-3) 2px;
   border-left: solid var(--color-3) 2px;
   position: relative;
 }
