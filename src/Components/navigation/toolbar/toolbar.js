@@ -9,12 +9,8 @@ const toolbar = (props) => (
   //   className={props.isTop !== true ? classes.toolbarTop : classes.toolbar}
   // >
   <header className={classes.toolbarTop}>
-    <div className={classes.logo}>
-      <div className={classes.img}>
-        <h1>ים אירועים</h1>
-      </div>
-    </div>
-    {/* <DrawerToggle clicked={props.drawerToggleClicked} /> */}
+
+    <DrawerToggle clicked={props.drawerToggleClicked} /> 
     <nav className={classes.desktop__only}>
       <NavigationItems />
     </nav>
