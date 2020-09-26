@@ -1,11 +1,12 @@
 .container_text {
-  height: 72vh;
+  height: 67vh;
+  margin-top: 8vh;
   position: relative;
   background-color: #cacfd3;
   background-image: url("../../image/bigCarousel/66.jpg");
   background-repeat: no-repeat;
   background-attachment: initial;
-  background-size: auto  72vh;
+  background-size: auto 67vh;
   background-position: center top;
   /* background-position-y: 8vh; */
 }
