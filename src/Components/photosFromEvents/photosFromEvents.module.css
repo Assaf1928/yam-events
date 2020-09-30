@@ -1,0 +1,12 @@
+.photosFromEvents_container {
+  width: 100%;
+  height: auto;
+}
+
+.photosFromEvents_container img {
+  width: auto;
+  max-width: 90%;
+  max-height: 40vh;
+  display: inline-block;
+  margin: 5px;
+}

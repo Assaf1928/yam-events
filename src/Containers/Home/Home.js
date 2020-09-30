@@ -4,6 +4,7 @@ import BigCarousel from "../../Components/bigCarousel/bigCarousel";
 import Header from "../../Components/header/header";
 import Welcome from "../../Components/welcome/welcome";
 import ServiceDescription from "../../Components/serviceDescription/serviceDescription";
+import PhotosFromEvents from "../../Components/photosFromEvents/photosFromEvents";
 import About from "../../Components/about/About";
 import SmallCarousel from "../../Components/smallCarousel/smallCarousel";
 import axios from "axios";
@@ -88,6 +89,7 @@ class Home extends Component {
         <ServiceDescription
           serviceDescriptionCardsArr={this.state.serviceDescriptionCardsArr}
         />
+        {/* <PhotosFromEvents/> */}
         <SmallCarousel pause={(event) => this.a(event)} />
         <About />
       </div>
