@@ -11,7 +11,8 @@ const toolbar = (props) => (
   <header className={classes.toolbarTop}>
     <div className={classes.logo}>
       <div className={classes.img}>
-        <h1>ים אירועים</h1>
+        {/* <h1>ים אירועים</h1> */}
+        .
       </div>
     </div>
     {/* <DrawerToggle clicked={props.drawerToggleClicked} /> */}

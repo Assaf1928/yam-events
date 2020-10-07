@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-attachment: initial;
   background-size: auto 67vh;
-  background-position: center top;
+  background-position: center center;
   /* background-position-y: 8vh; */
 }
 
@@ -20,7 +20,6 @@
   right: 50%;
   top:50%;
   transform: translate(50%,-50%);
-  border-radius:10px ;
   letter-spacing: 0.8px;
   /* border: solid var(--color-3) 1px; */
   /* border-left: 0; */
@@ -50,3 +49,84 @@
     top: 10px;
   }
 }
+
+
+@media only screen and (max-width: 1024px) {
+  .container_text {
+    background-image: url("../../image/bigCarousel/66_media.jpg");
+    background-size: auto 100vh;
+  }
+
+  .arrow{
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container_text {
+    background-size: auto 90vh;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .container_text {
+    background-size: auto 70vh;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .container_text {
+    background-size: auto 70vh;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .container_text {
+    background-size: auto 55vh;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .container_text {
+    background-size: auto 50vh;
+  }
+}
+
+@media only screen and (max-width: 376px) and (max-height: 812px) {
+  .container_text {
+    background-size: auto 40vh;
+  }
+}
+
+
+@media only screen and (max-width: 376px) and (max-height: 668px) {
+  .container_text {
+    background-size: auto 55vh;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .container_text {
+    background-size: auto 55vh;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container_text {
+    background-size: auto 50vh;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .container_text {
+    background-size: auto 55vh;
+  }
+}
+
+
+
+
+
+
+

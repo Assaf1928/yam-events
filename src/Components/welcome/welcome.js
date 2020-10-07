@@ -13,8 +13,8 @@ const welcome = (props) => {
           [generalDesign.center_horizontal]: false,
         })}
       >
-        <h1>ברוכים הבאים</h1>
-        <h3>ים אירועים</h3>
+        <h1>ים אירועים</h1>
+        <h3>השכרת ציוד לכל סוגי האירועים</h3>
         <h5>השכרת ציוד לאירועים</h5>
         <div className={classes.arrow}>&#8675;</div>
       </div>

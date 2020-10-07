@@ -3,7 +3,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family:'Comix No2 CLM';
+  font-family:'Comix No2 CLM'!important;
 }
 
 code {

@@ -9,7 +9,7 @@ const about = () => {
   return (
     <div className={classes.about__div_container}>
       <div className={classes.about__div}>
-        <div className={classes.polygon}>123</div>
+        <div className={classes.polygon}></div>
         <div className={classes.text__about__div}>
           <article className={generalDesign.center_horizontal}>
             <p>
