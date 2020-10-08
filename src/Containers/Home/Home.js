@@ -89,7 +89,7 @@ class Home extends Component {
         <ServiceDescription
           serviceDescriptionCardsArr={this.state.serviceDescriptionCardsArr}
         />
-        {/* <PhotosFromEvents/> */}
+        <PhotosFromEvents/>
         <SmallCarousel pause={(event) => this.a(event)} />
         <About />
       </div>

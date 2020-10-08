@@ -7,7 +7,7 @@
   margin-top: 2vh;
 }
 .links_container div {
-  color: rgb(236, 233, 233);
+  color: white;
   margin-left: 50px;
   line-height: 25px;
 }
@@ -15,7 +15,7 @@
 .links_container ul:before {
   float: right;
   content: attr(aria-label);
-  color: black;
+  color:  white;
   font-weight: bold;
 
 }

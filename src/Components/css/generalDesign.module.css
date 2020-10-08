@@ -1,12 +1,11 @@
-:root{
-    --color-1: #cacfd3;
-    /* --color-background: #f0f0f0; */
-    --color-3: white; /* #fbff07*/
+:root {
+  --color-1: #cacfd3;/*#e9ebec*/
+  --color-2: #212529;
+  --color-3: white; /* #fbff07*/
 }
 
-
-.center_horizontal{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+.center_horizontal {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }

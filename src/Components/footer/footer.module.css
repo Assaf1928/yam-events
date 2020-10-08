@@ -1,10 +1,11 @@
 .footer__container {
   width: 100%;
   height: auto;
-  background-color: #111;
+  background-color: var(--color-1);
   /* position: absolute; */
   bottom: 0;
 }
+
 
 .icons__row {
   margin: auto;
@@ -13,17 +14,17 @@
   display: flex;
   font-size: 30px;
   cursor: pointer;
-  background-color: #111;
+  background-color:var(--color-1);
   justify-content: center;
 }
 .icons__row div {
-  color: var(--color-1);
+  color: #111;
   margin: 0 15px;
 }
 
 .zigzag {
-  background: linear-gradient(-45deg, var(--color-1) 10px, transparent 0),
-    linear-gradient(45deg, var(--color-1) 10px, transparent 0);
+  background: linear-gradient(-45deg, #111 10px, transparent 0),
+    linear-gradient(45deg, #111 10px, transparent 0);
   background-position: left-bottom;
   background-repeat: repeat-x;
   background-size: 20px 20px;
@@ -31,12 +32,13 @@
   display: block;
   width: 100%;
   height: 20px;
-}
+} 
 
 .bottom {
   display: flex;
   direction: rtl;
-  background-color: var(--color-1);
+  background-color: #111;
+  letter-spacing: 1.2px;
 }
 
 .Links_container{
@@ -49,7 +51,7 @@
 
 .vl {
   width: 100%;
-  border-left: 3px solid black;
+  border-left: 3px solid white;
   height: 90%;
   margin-top: 2vh;
 }
@@ -60,7 +62,8 @@
   padding: 0 2vw;
   text-align: right;
   font-size: 0.8em;
-  font-weight: bold;
+  /* font-weight: bold; */
+  color: white;
 }
 .bottom .flex_item {
   width: 100%;

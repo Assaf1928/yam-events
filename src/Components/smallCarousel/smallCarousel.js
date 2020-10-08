@@ -16,6 +16,23 @@ import img2 from "../../image/smallCarousel/6.jpg";
 import img3 from "../../image/smallCarousel/7.jpg";
 
 const smallCarousel = (props) => {
+
+  let visibleSlides = 5;
+  const a =window.innerWidth/window.innerHeight;
+  console.log(a)
+  if(a < 0.4){
+    visibleSlides = 1;
+  }
+  else if(a < 0.7){
+    visibleSlides = 2;
+  }
+  else if(a < 1){
+    visibleSlides = 3;
+  }
+  else if(window.innerWidth < 900){
+    visibleSlides = 4;
+  }
+  console.log(window.innerWidth);
   return (
     <div className={classes.small__carousel_container}>
       <div
@@ -30,7 +47,7 @@ const smallCarousel = (props) => {
         <div className={classes.container__carousel}>
           <CarouselProvider
             totalSlides={6}
-            visibleSlides={4}
+            visibleSlides={visibleSlides}
             interval={3000}
             isPlaying={true}
             naturalSlideWidth={1}
@@ -39,7 +56,7 @@ const smallCarousel = (props) => {
             infinite={false}
             className={classNames({
               [classes.CarouselProvider]: true,
-              [generalDesign.center_horizontal]: true,
+              [generalDesign.center_horizontal]: false,
             })}
           >
             <Slider className={classes.Slider}>
