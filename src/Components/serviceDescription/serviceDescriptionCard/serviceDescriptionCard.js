@@ -13,7 +13,7 @@ const serviceDescriptionCard = (props) => {
           [generalDesign.center_horizontal]: false,
         })}
       >
-        <h1>{props.icon}</h1>
+        <h2>{props.icon}</h2>
         <h5>{props.title}</h5>
         <label> {props.description}</label>
       </div>
