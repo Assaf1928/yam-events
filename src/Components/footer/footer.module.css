@@ -1,7 +1,7 @@
 .footer__container {
   width: 100%;
   height: auto;
-  background-color: var(--color-1);
+  background-color: var(--color-4);
   /* position: absolute; */
   bottom: 0;
 }
@@ -14,17 +14,16 @@
   display: flex;
   font-size: 30px;
   cursor: pointer;
-  background-color:var(--color-1);
+  background-color:var(--color-4);
   justify-content: center;
 }
 .icons__row div {
-  color: #111;
   margin: 0 15px;
 }
 
 .zigzag {
-  background: linear-gradient(-45deg, #111 10px, transparent 0),
-    linear-gradient(45deg, #111 10px, transparent 0);
+  background: linear-gradient(-45deg, var(--color-5) 10px, transparent 0),
+    linear-gradient(45deg, var(--color-5) 10px, transparent 0);
   background-position: left-bottom;
   background-repeat: repeat-x;
   background-size: 20px 20px;
@@ -37,7 +36,7 @@
 .bottom {
   display: flex;
   direction: rtl;
-  background-color: #111;
+  background-color: var(--color-5);
   letter-spacing: 1.2px;
 }
 

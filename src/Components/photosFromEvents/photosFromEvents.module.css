@@ -8,9 +8,9 @@
   width:88%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(14, 5vw);
-  grid-template-rows: repeat(12, 5.8vh);
-  grid-gap: 15px;
+  grid-template-columns: repeat(14, 5.35vw);
+  grid-template-rows:  repeat(12, 3.12vw);/*repeat(12, 5.8vh);  /*ratio width/height*//*grid-template-rows: repeat(12, 3.12vw);*/
+  grid-gap: 1vw;
 }
 
 .gallery__img {
@@ -74,3 +74,265 @@
   grid-row-start: 7;
   grid-row-end: 14;
 }
+
+
+
+
+@media  (min-aspect-ratio: 260/100) {
+  .gallery__item h2{
+    font-size: 6vmin;
+  }
+  
+  .gallery__item h3{
+    font-size: 4.2vmin;
+  }
+  
+  .gallery__item h5{
+    font-size: 3.6vmin;
+  }
+} 
+
+
+@media  (min-aspect-ratio: 355/100) {
+  .gallery__item h2{
+    font-size: 7vmin;
+  }
+  
+  .gallery__item h3{
+    font-size: 5.4vmin;
+  }
+  
+  .gallery__item h5{
+    font-size: 4.2vmin;
+  }
+} 
+
+
+
+@media  (max-aspect-ratio: 185/100) {
+  .gallery__item h2{
+    font-size: 5vmin;
+  }
+  
+  .gallery__item h3{
+    font-size: 3.2vmin;
+  }
+  
+  .gallery__item h5{
+    font-size: 2.8vmin;
+  }
+} 
+
+@media  (max-aspect-ratio: 165/100) {
+  .gallery__item h2{
+    font-size: 4vmin;
+  }
+  
+  .gallery__item h3{
+    font-size: 2.9vmin;
+  }
+  
+  .gallery__item h5{
+    font-size: 2.5vmin;
+  }
+} 
+
+
+@media  (max-aspect-ratio: 148/100) {
+  .gallery__item h2{
+    font-size: 3.6vmin;
+  }
+  
+  .gallery__item h3{
+    font-size: 2.8vmin;
+  }
+  
+  .gallery__item h5{
+    font-size: 2.3vmin;
+  }
+} 
+
+
+
+@media  (max-aspect-ratio: 136/100) {
+  .gallery__item h2{
+    font-size: 3.6vmin;
+  }
+  
+  .gallery__item h3{
+    font-size: 2.6vmin;
+  }
+  
+  .gallery__item h5{
+    font-size: 2.1vmin;
+  }
+} 
+
+
+
+@media  (max-aspect-ratio: 126/100) {
+  .gallery__item h2{
+    font-size: 3vmin;
+  }
+  
+  .gallery__item h3{
+    font-size: 2.3vmin;
+  }
+  
+  .gallery__item h5{
+    font-size: 1.8vmin;
+  }
+}
+
+
+
+@media  (max-aspect-ratio: 115/100) {
+  .gallery__item h2{
+    font-size: 2.8vmin;
+  }
+  
+  .gallery__item h3{
+    font-size: 2vmin;
+  }
+  
+  .gallery__item h5{
+    font-size: 1.5vmin;
+  }
+}
+
+
+
+@media  (max-width: 700px) {
+
+
+  .gallery {
+    width:88%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(14, 5.35vw);
+    grid-template-rows:  repeat(20, 3.12vw);/*repeat(12, 5.8vh);  /*ratio width/height*//*grid-template-rows: repeat(12, 3.12vw);*/
+    grid-gap: 1vw;
+  }
+
+  .gallery__item_1 {
+    grid-column-start: 10;
+    grid-column-end: 15;
+    grid-row-start: 9;
+    grid-row-end: 15;
+  }
+  
+  
+  .gallery__item_5 {
+    grid-column-start: 10;
+    grid-column-end: 15;
+    grid-row-start: 15;
+    grid-row-end: 21;
+  }
+  
+  
+  .gallery__item_3 {
+    grid-column-start: 5;
+    grid-column-end: 10;
+    grid-row-start: 9;
+    grid-row-end: 21;
+  }
+  
+   .gallery__item_6 {
+     display: none;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 7;
+  } 
+  
+  .gallery__item_8{
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 9;
+  }
+  
+  
+  .gallery__item_text1{
+    direction: rtl;
+    grid-column-start: 10;
+    grid-column-end: 15;
+    grid-row-start: 2;
+    grid-row-end: 9;
+  }
+  
+  
+  
+  .gallery__item_text2{
+    direction: rtl;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 9;
+    grid-row-end: 19;
+  }
+
+  .gallery__item h2{
+    font-size: 3.5vw;
+  }
+  
+  .gallery__item h3{
+    font-size: 3vw;
+  }
+  
+  .gallery__item h5{
+    font-size: 2.5vw;
+  }
+  
+}
+
+
+
+
+
+/* 
+@media  (max-aspect-ratio: 100/135) {
+  .gallery__item h2{
+    font-size: 4.4vmin;
+  }
+  
+  .gallery__item h3{
+    font-size: 3vmin;
+  }
+  
+  .gallery__item h5{
+    font-size: 2.5vmin;
+  }
+} 
+
+
+
+@media  (max-aspect-ratio: 100/160) {
+  .gallery__item h2{
+    font-size: 4.7vmin;
+  }
+  
+  .gallery__item h3{
+    font-size: 3.5vmin;
+  }
+  
+  .gallery__item h5{
+    font-size: 2.8vmin;
+  }
+} 
+
+
+
+@media  (max-aspect-ratio: 100/190) {
+  .gallery__item h2{
+    font-size: 4.7vmin;
+  }
+  
+  .gallery__item h3{
+    font-size: 3.8vmin;
+  }
+  
+  .gallery__item h5{
+    font-size: 3vmin;
+  }
+} 
+ */

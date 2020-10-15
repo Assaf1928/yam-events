@@ -48,7 +48,9 @@ class Home extends Component {
       {
         icon: <FaHandsHelping />,
         title: "שירות אמין",
-        description: <article dir="rtl">23 שנה של שירות אמין, מסור ואדיב</article>,
+        description: (
+          <article dir="rtl">23 שנה של שירות אמין, מסור ואדיב</article>
+        ),
       },
       {
         icon: <GrServices />,
@@ -62,6 +64,7 @@ class Home extends Component {
         ),
       },
     ],
+    visibleSlides: 5,
   };
 
   constructor(props) {
@@ -69,7 +72,29 @@ class Home extends Component {
     this.inputRef = React.createRef();
   }
 
+  GetCountImg(){
+    let visibleSlides = 5;
+    const a = window.innerWidth / window.innerHeight;
+    console.log(a);
+    if (a < 0.4) {
+      visibleSlides = 1;
+    } else if (a < 0.7) {
+      visibleSlides = 2;
+    } else if (a < 1) {
+      visibleSlides = 3;
+    } else if (window.innerWidth < 900) {
+      visibleSlides = 4;
+    }
+    return visibleSlides;
+  }
+
   componentDidMount() {
+    console.log("componentDidMount");
+    this.setState({ visibleSlides: this.GetCountImg() });
+    window.addEventListener("resize", () => {
+      this.setState({ visibleSlides: this.GetCountImg() });
+    });
+
     // window.addEventListener('scroll',() => {
     //     console.log(window.scrollY);
     //     console.log(window.innerHeight/100*8);
@@ -89,8 +114,11 @@ class Home extends Component {
         <ServiceDescription
           serviceDescriptionCardsArr={this.state.serviceDescriptionCardsArr}
         />
-        <PhotosFromEvents/>
-        <SmallCarousel pause={(event) => this.a(event)} />
+        <PhotosFromEvents />
+        <SmallCarousel
+          visibleSlides={this.state.visibleSlides}
+          pause={(event) => this.a(event)}
+        />
         <About />
       </div>
     );

@@ -1,7 +1,9 @@
 :root {
-  --color-1: #cacfd3;/*#e9ebec*/
-  --color-2: #212529;
+  --color-1: #f2f1ef;/*#e9ebec*/
+  --color-2: #413f3d;
   --color-3: white; /* #fbff07*/
+  --color-4: #d8d0d0; 
+  --color-5: #b1a6a4; 
 }
 
 .center_horizontal {
