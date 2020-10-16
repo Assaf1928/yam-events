@@ -8,6 +8,11 @@
   margin: auto;
   text-align: right;
   font-size: 2.3vmin;
+  font-weight: bold !important;
+}
+
+.navigation__items button{
+  font-weight: bold !important;
 }
 
 .navigation__items .container {

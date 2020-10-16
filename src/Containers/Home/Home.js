@@ -11,7 +11,7 @@ import axios from "axios";
 
 import { GrServices } from "react-icons/gr";
 import { AiOutlineClear } from "react-icons/ai";
-import { FaHandsHelping, FaTruckMoving } from "react-icons/fa";
+import { FaHandsHelping, FaLeaf, FaTruckMoving } from "react-icons/fa";
 
 class Home extends Component {
   componentDidMount() {
@@ -65,6 +65,8 @@ class Home extends Component {
       },
     ],
     visibleSlides: 5,
+    ifPlayAnimationPhotosFromEvent: false,
+    ifPlayAnimationAbout: false,
   };
 
   constructor(props) {
@@ -72,10 +74,9 @@ class Home extends Component {
     this.inputRef = React.createRef();
   }
 
-  GetCountImg(){
+  GetCountImg() {
     let visibleSlides = 5;
     const a = window.innerWidth / window.innerHeight;
-    console.log(a);
     if (a < 0.4) {
       visibleSlides = 1;
     } else if (a < 0.7) {
@@ -95,6 +96,17 @@ class Home extends Component {
       this.setState({ visibleSlides: this.GetCountImg() });
     });
 
+    window.addEventListener("scroll", () => {
+      console.log("scrill")
+      if (this.state.ifPlayAnimationPhotosFromEvent == false)
+        if (window.innerHeight * 0.3 <= window.pageYOffset) {
+          this.setState({ ifPlayAnimationPhotosFromEvent: true });
+        }
+      if (this.state.ifPlayAnimationAbout == false)
+        if (window.innerHeight * 1.8 <= window.pageYOffset) {
+          this.setState({ ifPlayAnimationAbout: true });
+        }
+    });
     // window.addEventListener('scroll',() => {
     //     console.log(window.scrollY);
     //     console.log(window.innerHeight/100*8);
@@ -105,7 +117,6 @@ class Home extends Component {
   }
 
   render() {
-    console.log(this.state.serviceDescriptionCardsArr);
     return (
       <div>
         {/* <BigCarousel isTop={this.state.isTop} /> */}
@@ -114,12 +125,16 @@ class Home extends Component {
         <ServiceDescription
           serviceDescriptionCardsArr={this.state.serviceDescriptionCardsArr}
         />
-        <PhotosFromEvents />
+        <PhotosFromEvents
+          ifPlayAnimationPhotosFromEvent={
+            this.state.ifPlayAnimationPhotosFromEvent
+          }
+        />
         <SmallCarousel
           visibleSlides={this.state.visibleSlides}
           pause={(event) => this.a(event)}
         />
-        <About />
+        <About ifPlayAnimationAbout={this.state.ifPlayAnimationAbout} />
       </div>
     );
   }

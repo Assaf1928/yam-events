@@ -5,7 +5,7 @@ import generalDesign from "../css/generalDesign.module.css";
 import classes from "./About.module.css";
 
 
-const about = () => {
+const about = (props) => {
   return (
     <div className={classes.about__div_container}>
       <div className={classes.about__div}>
@@ -71,7 +71,7 @@ const about = () => {
         </div>
 
         <div className={classes.grid__div}>
-          <GridGallery />
+          <GridGallery ifPlayAnimationAbout={props.ifPlayAnimationAbout}/>
         </div>
       </div>
     </div>
