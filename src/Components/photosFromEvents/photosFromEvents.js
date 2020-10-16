@@ -15,7 +15,12 @@ import img8 from "../../image/photosFromEvents/8.jpg";
 const photosFromEvents = (props) => {
   return (
     <div className={classes.photosFromEvents_container}>
-      <div className={classes.gallery}>
+      <div
+        className={classNames({
+          [classes.gallery]: true,
+          [classes.fadeInRightBigAnimation]: props.ifPlayAnimationPhotosFromEvent,
+        })}
+      >
         <figure
           className={classNames({
             [classes.gallery__item]: true,

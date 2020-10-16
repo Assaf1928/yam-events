@@ -1,5 +1,5 @@
 .links_container {
-  width:100%;
+  width: 100%;
   float: right;
   display: flex;
   flex-direction: row;
@@ -8,16 +8,15 @@
 }
 .links_container div {
   color: white;
-  margin-left: 50px;
+  margin-left: 2vw;
   line-height: 25px;
 }
 
 .links_container ul:before {
   float: right;
   content: attr(aria-label);
-  color:  white;
+  color: white;
   font-weight: bold;
-
 }
 .links_container ul {
   width: 100%;
