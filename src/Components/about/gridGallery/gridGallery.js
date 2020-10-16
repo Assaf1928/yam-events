@@ -17,13 +17,16 @@ const gridGallery = () => {
       <div className={classes.block_img}>
         <img src={img4} />{" "}
       </div>
-      <div className={classes.block_img}>
+      <div className={classNames({
+          [classes.block_img]: true,
+          [classes.big_img_block1]: true,
+        })}>
         <img src={img3} />{" "}
       </div>
       <div
         className={classNames({
           [classes.block_img]: true,
-          [classes.big_img_block]: true,
+          [classes.big_img_block2]: true,
         })}
       >
         <img  src={img2} />{" "}

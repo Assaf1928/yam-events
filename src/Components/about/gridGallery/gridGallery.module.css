@@ -13,10 +13,29 @@
   height: auto;
 }
 
-.big_img_block  {
+
+
+.big_img_block2  {
   width: 100% !important;
-  max-height: 53.333333333vh !important;
 }
+
+
+
+
+@media (max-aspect-ratio: 1/1) {
+  
+  .row .block_img {
+    width: 48%;
+    margin: 2px 0.6666%;
+    display: inline-block;
+  }
+  .big_img_block1  {
+    width: 100% !important;
+  }
+  
+}
+
+
 
 @media (max-aspect-ratio: 70/100) {
   .row {
@@ -38,3 +57,5 @@
     transform: translate(50%,-50%);
   }
 }
+
+
