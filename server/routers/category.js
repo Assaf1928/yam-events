@@ -1,3 +1,4 @@
+const { SSL_OP_TLS_D5_BUG } = require('constants');
 const express = require('express')
 const fs = require('fs');
 const router = new express.Router();
@@ -14,20 +15,106 @@ const data = [{
         name: 'beanbag/', //folder name
     }, {
         id:2,
-        name:'cutlery/'
+        name:'footstool/'
     }, {
         id:3,
-        name:'plates/'
+        name:'mats/'
+    }, {
+        id:4,
+        name:'photons/'
+
+    }, {
+        id:5,
+        name:'pillow/'
     }]
     
-}]
+}, {
+    id:2,
+    name: 'furniture',
+    path: '../src/image/subCategory/furniture/',
+    clientNeededPath: 'src/image/subCategory/furniture/',
+    subs: [{
+        id:1,
+        name: 'buffets/', 
+    }, {
+        id:2,
+        name:'chairs/'
+    }, {
+        id:3,
+        name:'tables/'
+    }]
+}, {
+    id:3,
+    name: 'servingDishes',
+    path: '../src/image/subCategory/servingDishes/',
+    clientNeededPath: 'src/image/subCategory/servingDishes/',
+    subs: [{
+        id:1,
+        name: 'barBowls/', 
+    }, {
+        id:2,
+        name:'clearanceTray/'
+    }, {
+        id:3,
+        name:'cups/'
+    }, {
+        id:4,
+        name:'cutlery/'
+    },{
+        id:5,
+        name:'plates/',
+    }, {
+        id:6,
+        name:'pots/'
+    }, {
+        id:7,
+        name:'salters/'
+    },{
+    id:8,
+    name:'servingBowls/'
+    },{
+    id:9,
+    name:'shefinDish/'}]
+    },{
+        id:4,
+        name: 'supplementaryEquipment',
+        path: '../src/image/subCategory/supplementaryEquipment/',
+        clientNeededPath: 'src/image/subCategory/supplementaryEquipment/',
+        subs: [{
+            id:1,
+            name: 'airConditioning/', 
+        }, {
+            id:2,
+            name:'curtain/'
+        }, {
+            id:3,
+            name:'heatingAndCoolingUtensils/'
+        }, {
+            id:4,
+            name:'napkins/'
+        }, {
+            id:5,
+            name:'shadows/'
+        }, {
+            id:6,
+            name:'tableCloths/'
+        }]
+    }
+]
 
 
 router.get('/category', async (req,res) => {
+    const param = req.query.name;
+    //building URL
+    let url = __dirname.replace(/\\/g, "/");
+    url = url.replace("server/routers","");
+
       try {
-        await  fs.readdir('../src/image/bigCarousel', (err, files) => {
+        await  fs.readdir(url + `/src/image/${param}`, (err, files) => {
+            if(err) console.log(err);
+            else {
             res.status(201).send(files)
-            console.log(files);
+            }
         });
         } catch(e) {
             res.status(400).send(e)
@@ -45,18 +132,17 @@ router.get('/sub', async (req,res) => {
     //removing the backend/routers so we can get the base url.
     // e.x. C:/Users/asaf/Desktop/yam-events/ -- > base url
     var publicDir = require('path').join(__dirname,'/public');
-    app.use(express.static(publicDir));
+    publicDir = (require('path').resolve(__dirname, '../../'))
+    publicDir = publicDir.replace(/\\/g,"/");
 
-    let baseUrl  = __dirname.replace(/\\/g, "/");
-    baseUrl = baseUrl.replace("server/routers","");
-  //  console.log(baseUrl)
-    baseUrl = (require('path').resolve(__dirname, '../../'))
-    //console.log(require('path').resolve(__dirname, '../../'))
-    console.log(baseUrl + "/" + category.clientNeededPath + sub.name)
-    await  fs.readdir(category.path + sub.name, (err, files) => {
-        // res.status(201).send({files, path:   baseUrl + category.clientNeededPath + sub.name})
+    const url = publicDir + "/" + category.clientNeededPath + sub.name;
+
+    console.log(url)
+    await  fs.readdir(url, (err, files) => {
+        if(err) console.log(err) 
+        else {
         res.status(201).send({files, path:  "http://127.0.0.1:8887/alternativeEquipment/" + sub.name})
-      //  console.log(baseUrl + category.clientNeededPath + sub.name)
+        }
     });
     } catch(e){
         res.status(400).send(e)

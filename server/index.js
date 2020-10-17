@@ -5,7 +5,7 @@ const pino = require('express-pino-logger')();
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(pino);
-var cors = require('cors')
+const cors = require('cors')
 const categoryRouter = require('./routers/category')
 app.use(cors());
 app.use(express.json())
