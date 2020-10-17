@@ -1,6 +1,7 @@
 .about__div_container {
   width: 100%;
   height: 92vh;
+  min-height: 320px;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -100,6 +101,20 @@
 @media (min-aspect-ratio: 185/100) {
   .text__about__div article {
     font-size: 2vmin;
+  }
+}
+
+
+@media (min-aspect-ratio: 290/100) {
+  .text__about__div article {
+    font-size: 2.2vmin;
+  }
+}
+
+
+@media (min-aspect-ratio: 350/100) {
+  .text__about__div article {
+    font-size: 7px;
   }
 }
 
