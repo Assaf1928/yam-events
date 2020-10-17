@@ -15,19 +15,6 @@
   padding: 0 0.8vw;
 }
 
-.serviceDescriptionCard h1{
-  padding: 0;
-  font-size: 6vmin;
-}
-
-.serviceDescriptionCard h5{
-  font-size: 3.1vmin;
-}
-
-.serviceDescriptionCard label{
-  font-size: 2vmin;
-}
-
 .serviceDescriptionCard ul {
   list-style: none;
   padding: 0;
@@ -37,7 +24,7 @@
 
 /* 
 @media only screen and (max-width: 415px) {
-  .serviceDescriptionCard h1{
+  .serviceDescriptionCard h2{
     font-size: 7vw;
   }
   
@@ -51,7 +38,7 @@
 } */
 
 @media (max-aspect-ratio: 1/1) and (min-aspect-ratio: 88/100) {
-  .serviceDescriptionCard h1{
+  .serviceDescriptionCard h2{
     font-size: 5.7vw;
   }
   
@@ -66,7 +53,7 @@
 
 
 @media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 100/84)  {
-  .serviceDescriptionCard h1{
+  .serviceDescriptionCard h2{
     font-size: 5vw;
   }
   
@@ -82,7 +69,7 @@
 
 
  @media  (max-aspect-ratio: 75/100) {
-  .serviceDescriptionCard h1{
+  .serviceDescriptionCard h2{
     font-size: 7vmin;
   }
   
@@ -99,7 +86,7 @@
 
 
 @media  (max-aspect-ratio: 60/100) {
-  .serviceDescriptionCard h1{
+  .serviceDescriptionCard h2{
     font-size: 6vmin;
   }
   
@@ -114,7 +101,7 @@
 
 
 @media  (max-aspect-ratio: 50/100) {
-  .serviceDescriptionCard h1{
+  .serviceDescriptionCard h2{
     font-size: 7vmin;
   }
   
@@ -130,7 +117,7 @@
 
 
 @media  (min-aspect-ratio: 240/100) {
-  .serviceDescriptionCard h1{
+  .serviceDescriptionCard h2{
     font-size: 6.8vh;
   }
   

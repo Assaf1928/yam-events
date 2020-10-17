@@ -4,6 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family:'Comix No2 CLM'!important;
+  color: var(--color-2);
 }
 
 code {

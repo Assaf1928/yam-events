@@ -1,5 +1,5 @@
 .links_container {
-  width:100%;
+  width: 100%;
   float: right;
   display: flex;
   flex-direction: row;
@@ -7,17 +7,16 @@
   margin-top: 2vh;
 }
 .links_container div {
-  color: rgb(236, 233, 233);
-  margin-left: 50px;
+  color: white;
+  margin-left: 2vw;
   line-height: 25px;
 }
 
 .links_container ul:before {
   float: right;
   content: attr(aria-label);
-  color: black;
+  color: white;
   font-weight: bold;
-
 }
 .links_container ul {
   width: 100%;
