@@ -7,8 +7,9 @@ import classes from "./About.module.css";
 
 const about = (props) => {
   return (
-    <div className={classes.about__div_container}>
-      <div className={classes.about__div}>
+    <div id="about" className={classes.about__div_container}>
+    <a href="#" className={classes.to_top}></a>  
+    <div className={classes.about__div}>
         <div className={classes.polygon}></div>
         <div className={classes.text__about__div}>
           <article className={generalDesign.center_horizontal}>

@@ -10,9 +10,7 @@ const navigationItems = (props) => (
       </NavLink>
     </div>
     <div className={classes.container}>
-      <NavLink to={"/card"} activeClassName={classes.active}>
-        אודות
-      </NavLink>
+        <a href="#about">אודות</a>
     </div>
     {/* <div className={classes.container}>
       <NavLink to={"/category"} activeClassName={classes.active}>
