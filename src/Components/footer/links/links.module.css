@@ -8,7 +8,6 @@
 }
 .links_container div {
   color: white;
-  margin-left: 2vw;
   line-height: 25px;
 }
 
@@ -21,6 +20,7 @@
 .links_container ul {
   width: 100%;
   list-style-type: none;
+  padding: 0 3vw;
 }
 .links_container ul li {
   text-align: right;

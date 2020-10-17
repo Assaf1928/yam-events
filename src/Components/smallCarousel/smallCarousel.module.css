@@ -1,6 +1,7 @@
 .small__carousel_container {
   width: 100%;
   height: 70vh;
+  min-height: 320px;
   background-color: var(--color-3);
   /* border-bottom: var(--color-3) solid 2px; */
   position: relative;

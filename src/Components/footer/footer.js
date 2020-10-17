@@ -31,28 +31,16 @@ const footer = () => (
     </div>
     <div className={classes.zigzag}></div>
     <div className={classes.bottom}>
-      <div
-        className={classNames({
-          [classes.flex_item]: true,
-          [classes.Links_container]: true,
-        })}
-      >
+      <div className={classes.Links_container}>
         <Links />
       </div>
-      <div
-        className={classNames({
-          [classes.flex_item]: true,
-          [classes.vl_container]: true,
-        })}
-      >
-        <div className={classes.vl}></div>
-      </div>
-      <div className={classes.flex_item}>
+      <div className={classes.credit_container}>
         <div className={classes.credit}>
+          {" "}
           <p>@כל הזכויות שמורות לים אירועים</p>
           <p>
-            האתר נבנה על ידי : אסף שהרבני assaf1928@gmail.com , צח פוני
-            tzachpony11@gmail.com{" "}
+            האתר נבנה על ידי : צח פוני tzachpony11@gmail.com, אסף שהרבני
+            assaf1928@gmail.com
           </p>
         </div>
       </div>
