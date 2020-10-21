@@ -47,6 +47,11 @@ label {
 }
 
 
+svg:hover{
+  color: #595959;
+  stroke: #595959!important;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -140,6 +140,19 @@
   }
 }
 
+
+
+@media (min-aspect-ratio: 236/100) {
+  .block_img{
+    max-width: 20vh;
+  }
+
+  .big_img_block2{
+    max-width: 62vh;
+  }
+}
+
+
 @media (max-aspect-ratio: 1/1) {
   
   .row .block_img {

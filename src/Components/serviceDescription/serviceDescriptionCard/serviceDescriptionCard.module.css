@@ -129,3 +129,43 @@
     font-size: 2.3vh;
   }
 } 
+
+
+
+@media  (max-width: 500px) {
+
+  .serviceDescriptionCard_container:first-child{
+    border-bottom:1px solid var(--color-4);
+  }
+  .serviceDescriptionCard_container:last-child{
+    border-bottom:1px solid var(--color-4);
+    border-left:1px solid var(--color-4);
+  }
+
+  .serviceDescriptionCard h2{
+    font-size: 8vmin;
+  }
+  
+  .serviceDescriptionCard h5{
+    font-size: 6vmin;
+  }
+  
+  .serviceDescriptionCard label{
+    font-size: 3.5vmin;
+  }  
+ } 
+
+
+
+
+/*@media (max-width: 350px) {
+  .serviceDescriptionCard_container{
+    height: 25vh;
+    position: relative;
+  }
+  .serviceDescriptionCard{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+  }
+} */

@@ -1,6 +1,7 @@
 .small__carousel_container {
   width: 100%;
-  height: 70vh;
+  height: 60vh; 
+  min-height: 320px;
   background-color: var(--color-3);
   /* border-bottom: var(--color-3) solid 2px; */
   position: relative;
@@ -8,7 +9,7 @@
 
 .small__carousel {
   width: 100%;
-  height: 80%;
+  height: 90%;
   margin: 0;
 }
 
@@ -76,3 +77,20 @@ img {
   font-weight: bold;
 }
 
+
+
+@media (min-aspect-ratio: 260/100) {
+  .small__carousel_container {
+    height: 80vh;
+  }
+}
+@media (max-aspect-ratio: 130/100) {
+  .small__carousel_container {
+    height: 45vh;
+  }
+}
+@media (max-aspect-ratio: 40/100) {
+  .small__carousel_container {
+    height: 50vh;
+  }
+}

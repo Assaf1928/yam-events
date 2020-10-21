@@ -11,48 +11,50 @@ import {
   AiFillMail,
   AiFillPhone,
 } from "react-icons/ai";
+import { RiWhatsappFill } from "react-icons/ri";
 import classNames from "classnames";
 
 const footer = () => (
   <footer className={classes.footer__container}>
     <div className={classes.icons__row}>
       <div>
-        <AiFillFacebook />
+        <a href="https://www.facebook.com/profile.php?id=100004933061558">
+          <AiFillFacebook />
+        </a>
       </div>
       <div>
-        <AiFillInstagram />
+        <a href="https://www.instagram.com/yam1event/">
+          <AiFillInstagram />
+        </a>
       </div>
       <div>
-        <AiFillMail />
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHxGzXhpGHGnRqTsjtjscxGQXnqZRdGNjgvJBqgGzXJRlhpRfFBKCBRwGDdNrxwNlRgKSnG">
+          <AiFillMail />
+        </a>
       </div>
       <div>
-        <AiFillPhone />
+        <a href="tel:0523757040">
+          <AiFillPhone />
+        </a>
+      </div>
+      <div>
+        <a href="https://api.whatsapp.com/send?phone=0523757040">
+          <RiWhatsappFill />
+        </a>
       </div>
     </div>
     <div className={classes.zigzag}></div>
     <div className={classes.bottom}>
-      <div
-        className={classNames({
-          [classes.flex_item]: true,
-          [classes.Links_container]: true,
-        })}
-      >
+      <div className={classes.Links_container}>
         <Links />
       </div>
-      <div
-        className={classNames({
-          [classes.flex_item]: true,
-          [classes.vl_container]: true,
-        })}
-      >
-        <div className={classes.vl}></div>
-      </div>
-      <div className={classes.flex_item}>
+      <div className={classes.credit_container}>
         <div className={classes.credit}>
+          {" "}
           <p>@כל הזכויות שמורות לים אירועים</p>
           <p>
-            האתר נבנה על ידי : אסף שהרבני assaf1928@gmail.com , צח פוני
-            tzachpony11@gmail.com{" "}
+            האתר נבנה על ידי : צח פוני tzachpony11@gmail.com, אסף שהרבני
+            assaf1928@gmail.com
           </p>
         </div>
       </div>

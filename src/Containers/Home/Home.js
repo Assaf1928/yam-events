@@ -9,6 +9,8 @@ import About from "../../Components/about/About";
 import SmallCarousel from "../../Components/smallCarousel/smallCarousel";
 import axios from "axios";
 
+import classNames from "classnames";
+
 import { GrServices } from "react-icons/gr";
 import { AiOutlineClear } from "react-icons/ai";
 import { FaHandsHelping, FaLeaf, FaTruckMoving } from "react-icons/fa";
@@ -67,6 +69,7 @@ class Home extends Component {
     visibleSlides: 5,
     ifPlayAnimationPhotosFromEvent: false,
     ifPlayAnimationAbout: false,
+    ifPlayAnimationTo_top: false,
   };
 
   constructor(props) {
@@ -83,7 +86,7 @@ class Home extends Component {
       visibleSlides = 2;
     } else if (a < 1) {
       visibleSlides = 3;
-    } else if (window.innerWidth < 900) {
+    } else if (a < 1.3) {
       visibleSlides = 4;
     }
     return visibleSlides;
@@ -97,7 +100,7 @@ class Home extends Component {
     });
 
     window.addEventListener("scroll", () => {
-      console.log("scrill")
+      console.log("scrill");
       if (this.state.ifPlayAnimationPhotosFromEvent == false)
         if (window.innerHeight * 0.3 <= window.pageYOffset) {
           this.setState({ ifPlayAnimationPhotosFromEvent: true });
@@ -130,6 +133,13 @@ class Home extends Component {
             this.state.ifPlayAnimationPhotosFromEvent
           }
         />
+        <a
+          href="#"
+          className={classNames({
+            [classes.to_top]: true,
+            [classes.AnimationTo_top]: this.state.ifPlayAnimationTo_top,
+          })}
+        ></a>
         <SmallCarousel
           visibleSlides={this.state.visibleSlides}
           pause={(event) => this.a(event)}

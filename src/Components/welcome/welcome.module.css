@@ -129,3 +129,10 @@
     background-size: auto 55vh;
   }
 }
+
+
+@media (max-width: 500px) {
+  .container_text{
+    height: 44vh;
+  }
+}
