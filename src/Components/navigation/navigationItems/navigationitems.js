@@ -23,13 +23,13 @@ const navigationItems = (props) => (
         <div className={classes.drop__down__content}>
           <a href="#">צלחות</a>
           <a href="#">כוסות</a>
-          <a href="#">סכום</a>
+          <a href="#">סכו"ם</a>
           <a href="#">קערות בר</a>
           <a href="#">קערות הגשה</a>
-          <a href="#">סלטרום</a>
-          <a href="#">שפינגום</a>
-          <a href="#">סירום</a>
-          <a href="#">מגשי פינוי</a>
+          <a href="#">סלטרים</a>
+          <a href="#">שפינגים</a>
+          <a href="#">סירים</a>
+          <a href="#">כלים נלווים</a>
         </div>
       </div>
     </div>
@@ -49,11 +49,10 @@ const navigationItems = (props) => (
         <button className={classes.drop__btn}> ציוד אלטרנטיבי </button>
         <div className={classes.drop__down__content}>
           <a href="#">פוטונים</a>
-          <a href="#">אוהלים</a>
           <a href="#">כריות</a>
           <a href="#">מחצלות</a>
-          <a href="#">אדומים</a>
-          <a href="#">פנפום</a>
+          <a href="#">הדומים</a>
+          <a href="#">פופים</a>
         </div>
       </div>
     </div>
@@ -61,12 +60,13 @@ const navigationItems = (props) => (
       <div className={classes.drop__down}>
         <button className={classes.drop__btn}> ציוד נלווה </button>
         <div className={classes.drop__down__content}>
-          <a href="#">שמשיות</a>
-          <a href="#">מיזוג</a>
-          <a href="#">פרגודים</a>
           <a href="#">אוהלים</a>
-          <a href="#">מפות ומפיות</a>
-          <a href="#">כלי חימום וקירור</a>
+          <a href="#">מיזוג</a>
+          <a href="#">שמשיות</a>
+          <a href="#">מפות</a>
+          <a href="#">מפיות</a>
+          <a href="#">כלי חימום וקירור מזון</a>
+          <a href="#">פרגודים</a>
         </div>
       </div>
     </div>
