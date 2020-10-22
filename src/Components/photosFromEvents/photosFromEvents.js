@@ -18,7 +18,8 @@ const photosFromEvents = (props) => {
       <div
         className={classNames({
           [classes.gallery]: true,
-          [classes.fadeInRightBigAnimation]: props.ifPlayAnimationPhotosFromEvent,
+          [classes.fadeInRightBigAnimation]:
+            props.ifPlayAnimationPhotosFromEvent,
         })}
       >
         <figure
@@ -29,7 +30,6 @@ const photosFromEvents = (props) => {
         >
           <img src={img1} className={classes.gallery__img} />
         </figure>
-
         <figure
           className={classNames({
             [classes.gallery__item]: true,
