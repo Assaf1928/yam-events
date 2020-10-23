@@ -26,6 +26,7 @@
   /* border-left: 0; */
 }
 
+
 .text h1,
 .text h3,
 .text h5,
@@ -134,5 +135,17 @@
 @media (max-width: 500px) {
   .container_text{
     height: 44vh;
+  }
+
+  .text h1{
+    font-size: 2em!important;
+  }
+  
+  .text h3{
+    font-size: 1.17em!important;
+  }
+  
+  .text h5{
+    font-size: 0.83em!important;
   }
 }
