@@ -11,14 +11,15 @@ const toolbar = (props) => (
   //   className={props.isTop !== true ? classes.toolbarTop : classes.toolbar}
   // >
   <header className={classes.toolbarTop}>
-    
     <DrawerToggle clicked={props.drawerToggleClicked} />
     <nav className={classes.desktop__only}>
       <NavigationItems />
     </nav>
-     <div className={classes.logo}>
-      <img src={LogoImg}/>
-    </div> 
+    <div className={classes.logo}>
+      <a href="/">
+        <img src={LogoImg} />
+      </a>
+    </div>
   </header>
 );
 
