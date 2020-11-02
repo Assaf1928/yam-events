@@ -8,7 +8,6 @@ import classes from "./About.module.css";
 const about = (props) => {
   return (
     <div id="about" className={classes.about__div_container}>
-    <a href="#" className={classes.to_top}></a>  
     <div className={classes.about__div}>
         <div className={classes.polygon}></div>
         <div className={classes.text__about__div}>

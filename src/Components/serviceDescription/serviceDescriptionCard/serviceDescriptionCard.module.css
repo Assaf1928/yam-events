@@ -21,7 +21,6 @@
   unicode-bidi: embed;
 }
 
-
 /* 
 @media only screen and (max-width: 415px) {
   .serviceDescriptionCard h2{
@@ -38,94 +37,194 @@
 } */
 
 @media (max-aspect-ratio: 1/1) and (min-aspect-ratio: 88/100) {
-  .serviceDescriptionCard h2{
+  .serviceDescriptionCard h2 {
     font-size: 5.7vw;
   }
-  
-  .serviceDescriptionCard h5{
+
+  .serviceDescriptionCard h5 {
     font-size: 3.2vw;
   }
-  
-  .serviceDescriptionCard label{
+
+  .serviceDescriptionCard label {
     font-size: 1.7vw;
   }
 }
 
-
-@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 100/84)  {
-  .serviceDescriptionCard h2{
+@media (min-aspect-ratio: 1/1) and (max-aspect-ratio: 100/85) {
+  .serviceDescriptionCard h2 {
     font-size: 5vw;
   }
-  
-  .serviceDescriptionCard h5{
+
+  .serviceDescriptionCard h5 {
     font-size: 2.8vw;
   }
-  
-  .serviceDescriptionCard label{
+
+  .serviceDescriptionCard label {
     font-size: 1.6vw;
+  }
+}
+
+@media (max-aspect-ratio: 75/100) {
+  .serviceDescriptionCard h2 {
+    font-size: 7vmin;
+  }
+
+  .serviceDescriptionCard h5 {
+    font-size: 3.3vmin;
+  }
+
+  .serviceDescriptionCard label {
+    font-size: 2.3vmin;
+  }
+}
+
+@media (max-aspect-ratio: 60/100) {
+  .serviceDescriptionCard h2 {
+    font-size: 6vmin;
+  }
+
+  .serviceDescriptionCard h5 {
+    font-size: 3.6vmin;
+  }
+
+  .serviceDescriptionCard label {
+    font-size: 2.6vmin;
+  }
+}
+
+@media (max-aspect-ratio: 50/100) {
+  .serviceDescriptionCard h2 {
+    font-size: 7vmin;
+  }
+
+  .serviceDescriptionCard h5 {
+    font-size: 4vmin;
+  }
+
+  .serviceDescriptionCard label {
+    font-size: 3vmin;
+  }
+}
+
+@media (min-aspect-ratio: 240/100) {
+  .serviceDescriptionCard h2 {
+    font-size: 6.8vh;
+  }
+
+  .serviceDescriptionCard h5 {
+    font-size: 3.8vh;
+  }
+
+  .serviceDescriptionCard label {
+    font-size: 2.3vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .serviceDescriptionCard_container:first-child {
+    border-bottom: 1px solid var(--color-4);
+  }
+  .serviceDescriptionCard_container:last-child {
+    border-bottom: 1px solid var(--color-4);
+    border-left: 1px solid var(--color-4);
+  }
+
+  @media (min-aspect-ratio: 1/1) {
+    .serviceDescriptionCard h2 {
+      font-size: 6.8vmax;
+      margin: 0;
+    }
+
+    .serviceDescriptionCard h5 {
+      font-size: 3.2vmax;
+    }
+
+    .serviceDescriptionCard label {
+      font-size: 2.2vmax;
+    }
+  }
+
+  @media (min-aspect-ratio: 18/100) {
+    .serviceDescriptionCard h2 {
+      font-size: 6.4vmax;
+    }
+
+    .serviceDescriptionCard h5 {
+      font-size: 2.8vmax;
+    }
+
+    .serviceDescriptionCard label {
+      font-size: 1.8vmax;
+    }
+  }
+
+  @media (max-aspect-ratio: 1/1) {
+    .serviceDescriptionCard h2 {
+      font-size: 6.8vmax;
+    }
+
+    .serviceDescriptionCard h5 {
+      font-size: 3.2vmax;
+    }
+
+    .serviceDescriptionCard label {
+      font-size: 2.2vmax;
+    }
+  }
+
+  @media (max-aspect-ratio: 63/100) {
+    .serviceDescriptionCard h2 {
+      font-size: 6.4vmax;
+    }
+
+    .serviceDescriptionCard h5 {
+      font-size: 2.8vmax;
+    }
+
+    .serviceDescriptionCard label {
+      font-size: 1.8vmax;
+    }
+  }
+
+  @media (max-aspect-ratio: 52/100) {
+    .serviceDescriptionCard h2 {
+      font-size: 6vmax;
+    }
+
+    .serviceDescriptionCard h5 {
+      font-size: 2.7vmax;
+    }
+
+    .serviceDescriptionCard label {
+      font-size: 1.7vmax;
+    }
+  }
+}
+
+@media (max-aspect-ratio: 37/100) {
+  .serviceDescriptionCard h2 {
+    font-size: 5vmax;
+  }
+
+  .serviceDescriptionCard h5 {
+    font-size: 2.4vmax;
+  }
+
+  .serviceDescriptionCard label {
+    font-size: 1.4vmax;
   }
 }
 
 
 
- @media  (max-aspect-ratio: 75/100) {
-  .serviceDescriptionCard h2{
-    font-size: 7vmin;
+/*@media (max-width: 350px) {
+  .serviceDescriptionCard_container{
+    height: 25vh;
+    position: relative;
   }
-  
-  .serviceDescriptionCard h5{
-    font-size: 3.3vmin;
+  .serviceDescriptionCard{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
   }
-  
-  .serviceDescriptionCard label{
-    font-size: 2.3vmin;
-  }
-} 
-
-
-
-
-@media  (max-aspect-ratio: 60/100) {
-  .serviceDescriptionCard h2{
-    font-size: 6vmin;
-  }
-  
-  .serviceDescriptionCard h5{
-    font-size: 3.6vmin;
-  }
-  
-  .serviceDescriptionCard label{
-    font-size: 2.6vmin;
-  }
-} 
-
-
-@media  (max-aspect-ratio: 50/100) {
-  .serviceDescriptionCard h2{
-    font-size: 7vmin;
-  }
-  
-  .serviceDescriptionCard h5{
-    font-size: 4vmin;
-  }
-  
-  .serviceDescriptionCard label{
-    font-size: 3vmin;
-  }
-} 
-
-
-
-@media  (min-aspect-ratio: 240/100) {
-  .serviceDescriptionCard h2{
-    font-size: 6.8vh;
-  }
-  
-  .serviceDescriptionCard h5{
-    font-size: 3.8vh;
-  }
-  
-  .serviceDescriptionCard label{
-    font-size: 2.3vh;
-  }
-} 
+} */

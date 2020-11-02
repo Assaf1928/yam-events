@@ -15,7 +15,7 @@ const welcome = (props) => {
       >
         <h1>ים אירועים</h1>
         <h3>השכרת ציוד לכל סוגי האירועים</h3>
-        <h5>השכרת ציוד לאירועים</h5>
+        <h5>נפגש בשמחות</h5>
         <div className={classes.arrow}>&#8675;</div>
       </div>
     </div>
