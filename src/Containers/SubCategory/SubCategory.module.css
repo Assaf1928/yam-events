@@ -1,9 +1,9 @@
 .cards__container {
     direction: rtl;
     width:80%;
+    height:100%;
+    box-sizing: content-box;
     margin:0 auto;
-    margin-top:150px;
-    height:80vh;
+    margin-top:100px;
     vertical-align:top;
 }
-

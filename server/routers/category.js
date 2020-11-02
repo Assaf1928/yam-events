@@ -141,7 +141,7 @@ router.get('/sub', async (req,res) => {
     await  fs.readdir(url, (err, files) => {
         if(err) console.log(err) 
         else {
-        res.status(201).send({files, path:  "http://127.0.0.1:8887/alternativeEquipment/" + sub.name})
+        res.status(201).send({files, path:  url})
         }
     });
     } catch(e){

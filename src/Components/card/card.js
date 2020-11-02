@@ -44,7 +44,7 @@ const Card = (props) => {
               <div className={classes.card__img} 
            alt="test" onClick={showModal} style={{backgroundImage:'url('+props.img+')'}}></div>
            <div className={classes.item__text}>
-           סכו"ם מעוצב
+           <p>{props.name}</p>
           <div className={classes.hr}></div>
              </div>
           </div>
