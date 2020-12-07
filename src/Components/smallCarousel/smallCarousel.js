@@ -21,7 +21,6 @@ import img6 from "../../image/smallCarousel/6.jpg";
 import img7 from "../../image/smallCarousel/7.jpg";
 
 const smallCarousel = (props) => {
-  console.log("smallCarouselCard"); 
   return (
     <div className={classes.small__carousel_container}>
       <div

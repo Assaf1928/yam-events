@@ -4,7 +4,6 @@ import classes from "./serviceDescription.module.css";
 import ServiceDescriptionCard from "./serviceDescriptionCard/serviceDescriptionCard";
 
 const serviceDescription = (props) => {
-  console.log(props.serviceDescriptionCardsArr);
   let a = props.serviceDescriptionCardsArr;
   return (
     <div className={classes.serviceDescription_container}>

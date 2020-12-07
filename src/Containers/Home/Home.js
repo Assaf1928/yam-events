@@ -101,14 +101,12 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    console.log("componentDidMount");
     this.setState({ visibleSlides: this.GetCountImg() });
     window.addEventListener("resize", () => {
       this.setState({ visibleSlides: this.GetCountImg() });
     });
 
     window.addEventListener("scroll", () => {
-      console.log("scrill");
       if (this.state.ifPlayAnimationPhotosFromEvent == false)
         if (window.innerHeight * 0.3 <= window.pageYOffset) {
           this.setState({ ifPlayAnimationPhotosFromEvent: true });
