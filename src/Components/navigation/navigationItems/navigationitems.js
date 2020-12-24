@@ -27,7 +27,7 @@ const navigationItems = (props) => (
           <a href="category?Id=3&subId=1">קערות בר</a>
           <a href="category?Id=3&subId=8">קערות הגשה</a>
           <a href="category?Id=3&subId=7">סלטרים</a>
-          <a href="category?Id=3&subId=9">שפיינגים</a>
+          <a href="category?Id=3&subId=9">שיפינגים</a>
           <a href="category?Id=3&subId=6">סירים</a>
           <a href="category?Id=3&subId=2">כלים נלווים</a>
         </div>
