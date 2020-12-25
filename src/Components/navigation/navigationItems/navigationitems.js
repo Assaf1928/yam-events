@@ -23,13 +23,13 @@ const navigationItems = (props) => (
         <div className={classes.drop__down__content}>
           <a href="category?Id=3&subId=5">צלחות</a>
           <a href="category?Id=3&subId=3">כוסות</a>
-          <a href="category?Id=3&subId=4">סכום</a>
+          <a href="category?Id=3&subId=4">סכו"ם</a>
           <a href="category?Id=3&subId=1">קערות בר</a>
           <a href="category?Id=3&subId=8">קערות הגשה</a>
-          <a href="category?Id=3&subId=">סלטרום</a>
-          <a href="category?Id=3&subId=">שפינגום</a>
-          <a href="category?Id=3&subId=">סירום</a>
-          <a href="category?Id=3&subId=2">מגשי פינוי</a>
+          <a href="category?Id=3&subId=7">סלטרים</a>
+          <a href="category?Id=3&subId=9">שיפינגים</a>
+          <a href="category?Id=3&subId=6">סירים</a>
+          <a href="category?Id=3&subId=2">כלים נלווים</a>
         </div>
       </div>
     </div>
@@ -49,11 +49,10 @@ const navigationItems = (props) => (
         <button className={classes.drop__btn}> ציוד אלטרנטיבי </button>
         <div className={classes.drop__down__content}>
           <a href="category?Id=1&subId=4">פוטונים</a>
-          <a href="category?Id=1&subId=">אוהלים</a>
           <a href="category?Id=1&subId=5">כריות</a>
           <a href="category?Id=1&subId=3">מחצלות</a>
           <a href="category?Id=1&subId=">הדומים</a>
-          <a href="category?Id=1&subId=">פנפום</a>
+          <a href="category?Id=1&subId=">פופים</a>
         </div>
       </div>
     </div>
@@ -61,12 +60,12 @@ const navigationItems = (props) => (
       <div className={classes.drop__down}>
         <button className={classes.drop__btn}> ציוד נלווה </button>
         <div className={classes.drop__down__content}>
-          <a href="category?Id=4&subId=">שמשיות</a>
+          <a href="category?Id=4&subId=">אוהלים</a>
           <a href="category?Id=4&subId=1">מיזוג</a>
           <a href="category?Id=4&subId=">פרגודים</a>
-          <a href="category?Id=4&subId=">אוהלים</a>
           <a href="category?Id=4&subId=4">מפות ומפיות</a>
           <a href="category?Id=4&subId=3">כלי חימום וקירור</a>
+          <a href="category?Id=4&subId=">שמשיות</a>
         </div>
       </div>
     </div>

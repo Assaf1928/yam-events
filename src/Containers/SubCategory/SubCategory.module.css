@@ -1,9 +1,38 @@
 .cards__container {
     direction: rtl;
     width:80%;
-    height:100%;
-    box-sizing: content-box;
-    margin:0 auto;
-    margin-top:100px;
-    vertical-align:top;
+    min-height:50vh;
+    margin: auto;
+    margin-top: calc(10vh);
+    margin-bottom: 20px;
 }
+/* 
+.cards__container h1{
+    margin: 2vh;
+} */
+
+.carousel__container {
+    background-color: #f4f4f4;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    text-align: center;
+  }
+  
+  .carousel__img {
+    width: 100%;
+    height: auto;
+  }
+
+  
+ol {
+    z-index: 15;
+    width: 60%;
+    padding: 0;
+    margin: auto !important;
+  }
+  
+  ol li {
+    width: 80% !important;
+    flex: 1 !important;
+  }
