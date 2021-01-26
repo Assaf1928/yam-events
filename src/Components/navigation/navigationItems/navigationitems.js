@@ -12,11 +12,6 @@ const navigationItems = (props) => (
     <div className={classes.container}>
       <a href="#about">אודות</a>
     </div>
-    {/* <div className={classes.container}>
-      <NavLink to={"/category"} activeClassName={classes.active}>
-        קטגוריה
-      </NavLink>
-    </div> */}
     <div className={classes.container}>
       <div className={classes.drop__down}>
         <button className={classes.drop__btn}> כלי הגשה </button>
@@ -51,8 +46,8 @@ const navigationItems = (props) => (
           <a href="category?Id=1&subId=4">פוטונים</a>
           <a href="category?Id=1&subId=5">כריות</a>
           <a href="category?Id=1&subId=3">מחצלות</a>
-          <a href="category?Id=1&subId=">הדומים</a>
-          <a href="category?Id=1&subId=">פופים</a>
+          <a href="category?Id=1&subId=2">הדומים</a>
+          <a href="category?Id=1&subId=1">פופים</a>
         </div>
       </div>
     </div>
@@ -60,12 +55,13 @@ const navigationItems = (props) => (
       <div className={classes.drop__down}>
         <button className={classes.drop__btn}> ציוד נלווה </button>
         <div className={classes.drop__down__content}>
-          <a href="category?Id=4&subId=">אוהלים</a>
+          <a href="category?Id=4&subId=5">אוהלים</a>
           <a href="category?Id=4&subId=1">מיזוג</a>
-          <a href="category?Id=4&subId=">פרגודים</a>
-          <a href="category?Id=4&subId=4">מפות ומפיות</a>
+          <a href="category?Id=4&subId=2">פרגודים</a>
+          <a href="category?Id=4&subId=6">מפות</a>
+          <a href="category?Id=4&subId=4">מפיות</a>
           <a href="category?Id=4&subId=3">כלי חימום וקירור</a>
-          <a href="category?Id=4&subId=">שמשיות</a>
+          <a href="category?Id=4&subId=7">שמשיות</a>
         </div>
       </div>
     </div>

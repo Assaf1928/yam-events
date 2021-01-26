@@ -14,27 +14,27 @@ const data = [
       {
         id: 1,
         name: "beanbag/", //folder name
-        title:"פופים"
+        title: "פופים",
       },
       {
         id: 2,
         name: "footstool/",
-        title:"הדומים"
+        title: "הדומים",
       },
       {
         id: 3,
         name: "mats/",
-        title:"מחצלות"
+        title: "מחצלות",
       },
       {
         id: 4,
         name: "photons/",
-        title:"פוטונים"
+        title: "פוטונים",
       },
       {
         id: 5,
         name: "pillows/",
-        title:"כריות"
+        title: "כריות",
       },
     ],
   },
@@ -47,17 +47,17 @@ const data = [
       {
         id: 1,
         name: "buffets/",
-        title:"מזנונים"
+        title: "מזנונים",
       },
       {
         id: 2,
         name: "chairs/",
-        title:"כסאות"
+        title: "כסאות",
       },
       {
         id: 3,
         name: "tables/",
-        title:"שולחנות"
+        title: "שולחנות",
       },
     ],
   },
@@ -70,47 +70,47 @@ const data = [
       {
         id: 1,
         name: "barBowls/",
-        title:"קערות בר"
+        title: "קערות בר",
       },
       {
         id: 2,
         name: "supplementaryDishes/",
-        title:"כלים נלווים"
+        title: "כלים נלווים",
       },
       {
         id: 3,
         name: "glasses/",
-        title:"כוסות"
+        title: "כוסות",
       },
       {
         id: 4,
         name: "cutlery/",
-        title:"סכו'ם"
+        title: "סכו'ם",
       },
       {
         id: 5,
         name: "plates/",
-        title:"צלחות"
+        title: "צלחות",
       },
       {
         id: 6,
         name: "pots/",
-        title:"סירים"
+        title: "סירים",
       },
       {
         id: 7,
         name: "salters/",
-        title:"סלטרים"
+        title: "סלטרים",
       },
       {
         id: 8,
         name: "servingBowls/",
-        title:"קערות הגשה"
+        title: "קערות הגשה",
       },
       {
         id: 9,
         name: "chafingDish/",
-        title:"שיפינגים"
+        title: "שיפינגים",
       },
     ],
   },
@@ -123,32 +123,37 @@ const data = [
       {
         id: 1,
         name: "airConditioning/",
-        title:"מיזוג"
+        title: "מיזוג",
       },
       {
         id: 2,
         name: "curtains/",
-        title:"פרגודים"
+        title: "פרגודים",
       },
       {
         id: 3,
         name: "heatingAndCoolingUtensils/",
-        title:"כלי חימום וקירור"
+        title: "כלי חימום וקירור",
       },
       {
         id: 4,
         name: "napkins/",
-        title:"מפיות"
+        title: "מפיות",
       },
       {
         id: 5,
         name: "tents/",
-        title:"אוהלים"
+        title: "אוהלים",
       },
       {
         id: 6,
         name: "tableCloths/",
-        title:"מפות"
+        title: "מפות",
+      },
+      {
+        id: 7,
+        name: "parasols/",
+        title: "שמשיות",
       },
     ],
   },
@@ -179,8 +184,8 @@ router.get("/sub", async (req, res) => {
     const subid = req.query.subId;
     let category = await data.find((category) => category.id == id);
     let sub = await category.subs.find((sub) => sub.id == subid);
-    console.log(category)
-    console.log(sub)
+    console.log(category);
+    console.log(sub);
     //reciving current location path
     //removing the backend/routers so we can get the base url.
     // e.x. C:/Users/asaf/Desktop/yam-events/ -- > base url
@@ -194,7 +199,7 @@ router.get("/sub", async (req, res) => {
     await fs.readdir(url, (err, files) => {
       if (err) console.log(err);
       else {
-        res.status(201).send({ files, path: url , title: sub.title});
+        res.status(201).send({ files, path: url, title: sub.title });
       }
     });
   } catch (e) {

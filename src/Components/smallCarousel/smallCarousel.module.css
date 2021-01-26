@@ -3,7 +3,6 @@
   height: 60vh; 
   min-height: 320px;
   background-color: var(--color-3);
-  /* border-bottom: var(--color-3) solid 2px; */
   position: relative;
 }
 

@@ -4,20 +4,18 @@ import {
   CarouselProvider,
   Slider,
   Slide,
-  ButtonBack,
-  ButtonNext,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import generalDesign from "../css/generalDesign.module.css";
 import classes from "./smallCarousel.module.css";
 import classNames from "classnames";
 import SmallCarouselCard from "./smallCarouselCard/smallCarouselCard";
-import img1 from "../../image/smallCarousel/1.jpg";
+import img1 from "../../image/smallCarousel/1.jpeg";
 import img2 from "../../image/smallCarousel/2.jpg";
-import img3 from "../../image/smallCarousel/3.jpg";
-import img4 from "../../image/smallCarousel/4.jpg";
-import img5 from "../../image/smallCarousel/5.jpg";
-import img6 from "../../image/smallCarousel/6.jpg";
+import img3 from "../../image/smallCarousel/3.jpeg";
+import img4 from "../../image/smallCarousel/4.jpeg";
+import img5 from "../../image/smallCarousel/5.jpeg";
+import img6 from "../../image/smallCarousel/6.jpeg";
 import img7 from "../../image/smallCarousel/7.jpg";
 
 const smallCarousel = (props) => {

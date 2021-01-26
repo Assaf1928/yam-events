@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Card from "../../Components/card/card";
 import classes from "./SubCategory.module.css";
 import axios from "axios";
-import img1 from "../../imgs/examples/1.jpg";
+import img1 from "../../image/subCategory/supplementaryEquipment/airConditioning/פטריית חימום גז.gif";
 
 import Modal from "../../Components/UI/modal/modal";
 import Carousel from "react-bootstrap/Carousel";
@@ -12,11 +12,11 @@ class SubCategory extends Component {
     path: "",
     title: "",
     ifShowModal: false,
+    activeIndex: 0,
   };
 
   componentDidMount() {
     const urlParams = new URLSearchParams(window.location.search);
-    const url = new URL("http:/localhost:3001/sub");
 
     axios
       .get("http://localhost:3001/sub", {
@@ -36,20 +36,23 @@ class SubCategory extends Component {
       .catch((err) => console.log(err));
   }
 
+  showModal = (e, id) => {
+    this.setState({
+      ifShowModal: true,
+      activeIndex: id,
+    });
+  };
+
+  hideModal = () => {
+    this.setState({ ifShowModal: false });
+  };
+
   render() {
-    const showModal = () => {
-      this.setState({ ifShowModal: true });
-    };
-
-    const hideModal = () => {
-      this.setState({ ifShowModal: false });
-    };
-
-    let cards = "no data to show";
-    let ModalItems;
-    if (this.state.data.length != 0) {
+    let cards = "לא קיימות תמונות להמחשה !";
+    let CarouselItems = "";
+    if (this.state.data.length !== 0) {
       cards = this.state.data.map((img, index) => {
-        // let url = this.state.path + img;
+        //let url = this.state.path + img;
         let url = img1;
         let name = img.split(".").slice(0, -1).join(".");
         return (
@@ -57,18 +60,18 @@ class SubCategory extends Component {
             key={index}
             id={index}
             img={url}
-            showModal={showModal}
+            showModal={(event) => this.showModal(event, index)}
             name={name}
           />
         );
       });
 
-      ModalItems = this.state.data.map((img, index) => {
+      CarouselItems = this.state.data.map((img, index) => {
         // let url = this.state.path + img;
         let url = img1;
         let name = img.split(".").slice(0, -1).join(".");
         return (
-          <Carousel.Item>
+          <Carousel.Item key={index} id={index}>
             <img className={classes.carousel__img} src={url} alt={index} />
             <Carousel.Caption>
               <p>{name}</p>
@@ -77,12 +80,15 @@ class SubCategory extends Component {
         );
       });
     }
+
     return (
       <div className={classes.cards__container}>
         <h1>{this.state.title}</h1>
-        <Modal show={this.state.ifShowModal} handleClose={() => hideModal()}>
+        <Modal show={this.state.ifShowModal} handleClose={this.hideModal}>
           <div className={classes.carousel__container}>
-            <Carousel>{ModalItems}</Carousel>
+            <Carousel activeIndex={this.state.activeIndex} >
+              {CarouselItems}
+            </Carousel>
           </div>
         </Modal>
         {cards}

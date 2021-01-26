@@ -1,7 +1,6 @@
 .footer__container {
   width: 100%;
   background-color: var(--color-4);
-  /* position: absolute; */
   bottom: 0;
 }
 

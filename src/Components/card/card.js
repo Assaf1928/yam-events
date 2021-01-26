@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import classes from "./card.module.css";
 import Auxiliary from "../../hoc/Auxiliary/Auxiliary";
+
 
 
 const Card = (props) => {

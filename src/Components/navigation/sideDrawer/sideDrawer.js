@@ -1,5 +1,5 @@
 import React from 'react';
-//import Logo from '../../Logo/Logo';
+
 import NavigationItems from '../navigationItems/navigationitems';
 import classes from './sideDrawer.module.css';
 import Backdrop from '../../UI/backdrop/backdrop';
@@ -15,7 +15,6 @@ const sideDrawer = ( props ) => {
             <Backdrop show={props.open} clicked={props.closed}/>
             <div className={attachedClasses.join(' ')}>
                 <div className={classes.logo}>
-                    {/* <Logo /> */}
                 </div>
                 <nav>
                     <NavigationItems />

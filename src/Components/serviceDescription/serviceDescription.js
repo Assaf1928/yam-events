@@ -7,16 +7,6 @@ const serviceDescription = (props) => {
   let a = props.serviceDescriptionCardsArr;
   return (
     <div className={classes.serviceDescription_container}>
-      {/* {props.serviceDescriptionCardsArr.map((a, index) => {
-        return (
-          <ServiceDescriptionCard
-            title={a.title}
-            icon={a.icon}
-            description={a.description}
-            index={index}
-          />
-        );
-      })} */}
       <div className={classes.a}>
         <ServiceDescriptionCard
           title={a[0].title}

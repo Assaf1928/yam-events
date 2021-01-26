@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import classes from "./Home.module.css";
-import BigCarousel from "../../Components/bigCarousel/bigCarousel";
-import Header from "../../Components/header/header";
 import Welcome from "../../Components/welcome/welcome";
 import ServiceDescription from "../../Components/serviceDescription/serviceDescription";
 import PhotosFromEvents from "../../Components/photosFromEvents/photosFromEvents";
@@ -13,7 +11,7 @@ import classNames from "classnames";
 
 import { GrServices } from "react-icons/gr";
 import { AiOutlineClear } from "react-icons/ai";
-import { FaHandsHelping, FaLeaf, FaTruckMoving } from "react-icons/fa";
+import { FaHandsHelping, FaTruckMoving } from "react-icons/fa";
 import {
   AiFillFacebook,
   AiFillInstagram,
@@ -29,7 +27,6 @@ class Home extends Component {
       .get(url)
       .then((res) => {
         this.setState({ bigCarouselImages: res.data });
-        console.log(this.state.bigCarouselImages);
       })
       .catch((err) => console.log(err));
   }
@@ -107,7 +104,7 @@ class Home extends Component {
     });
 
     window.addEventListener("scroll", () => {
-      if (this.state.ifPlayAnimationPhotosFromEvent == false)
+      if (this.state.ifPlayAnimationPhotosFromEvent === false)
         if (window.innerHeight * 0.3 <= window.pageYOffset) {
           this.setState({ ifPlayAnimationPhotosFromEvent: true });
         }
@@ -119,25 +116,16 @@ class Home extends Component {
         this.setState({ ifPlayAnimationContact_us: true });
         this.setState({ ifPlayAnimationTo_top: false });
       }
-      if (this.state.ifPlayAnimationAbout == false)
+      if (this.state.ifPlayAnimationAbout === false)
         if (window.innerHeight * 1.8 <= window.pageYOffset) {
           this.setState({ ifPlayAnimationAbout: true });
         }
     });
-    // window.addEventListener('scroll',() => {
-    //     console.log(window.scrollY);
-    //     console.log(window.innerHeight/100*8);
-    //     const ToolbarIsTop = window.scrollY > ((window.innerHeight/100)*8) ;
-    //     if(this.state.isTop !== ToolbarIsTop)
-    //     this.setState({ isTop: ToolbarIsTop });
-    // });
   }
 
   render() {
     return (
       <div>
-        {/* <BigCarousel isTop={this.state.isTop} /> */}
-        {/* <Header isTop={this.state.isTop} /> */}
         <Welcome />
         <div
           className={classNames({

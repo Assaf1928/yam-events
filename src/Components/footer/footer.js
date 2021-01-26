@@ -1,9 +1,6 @@
 import React from "react";
 
 import classes from "./footer.module.css";
-import { GrServices } from "react-icons/gr";
-import { AiOutlineClear } from "react-icons/ai";
-import { FaHandsHelping, FaTruckMoving } from "react-icons/fa";
 import Links from "./links/links";
 import {
   AiFillFacebook,
@@ -12,7 +9,6 @@ import {
   AiFillPhone,
 } from "react-icons/ai";
 import { RiWhatsappFill } from "react-icons/ri";
-import classNames from "classnames";
 
 const footer = () => (
   <footer className={classes.footer__container}>

@@ -21,21 +21,6 @@
   unicode-bidi: embed;
 }
 
-/* 
-@media only screen and (max-width: 415px) {
-  .serviceDescriptionCard h2{
-    font-size: 7vw;
-  }
-  
-  .serviceDescriptionCard h5{
-    font-size: 4vw;
-  }
-  
-  .serviceDescriptionCard label{
-    font-size: 2.7vw;
-  }
-} */
-
 @media (max-aspect-ratio: 1/1) and (min-aspect-ratio: 88/100) {
   .serviceDescriptionCard h2 {
     font-size: 5.7vw;
@@ -215,16 +200,3 @@
   }
 }
 
-
-
-/*@media (max-width: 350px) {
-  .serviceDescriptionCard_container{
-    height: 25vh;
-    position: relative;
-  }
-  .serviceDescriptionCard{
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-  }
-} */

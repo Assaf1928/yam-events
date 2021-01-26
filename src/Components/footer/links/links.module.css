@@ -17,6 +17,11 @@
   color: white;
   font-weight: bold;
 }
+
+.links_container ul li a{
+  color: white;
+}
+
 .links_container ul {
   width: 100%;
   list-style-type: none;

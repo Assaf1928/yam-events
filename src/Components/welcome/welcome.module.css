@@ -4,12 +4,11 @@
   margin-top: 8vh;
   position: relative;
   background-color: #cacfd3;
-  background-image: url("../../image/bigCarousel/66.jpg");
+  background-image: url("../../image/welcome/img.jpg");
   background-repeat: no-repeat;
   background-attachment: initial;
   background-size: auto 67vh;
   background-position: center center;
-  /* background-position-y: 8vh; */
 }
 
 .text {
@@ -21,17 +20,12 @@
   top: 50%;
   transform: translate(50%, -50%);
   letter-spacing: 0.8px;
-
-  /* border: solid var(--color-3) 1px; */
-  /* border-left: 0; */
 }
-
 
 .text h1,
 .text h3,
 .text h5,
 .arrow {
-  /* color: black; */
   font-weight: bold !important;
 }
 
@@ -62,7 +56,7 @@
 
 @media only screen and (max-width: 1024px) {
   .container_text {
-    background-image: url("../../image/bigCarousel/66_media.jpg");
+    background-image: url("../../image/welcome/img_media.jpg");
     background-size: auto 100vh;
   }
 
@@ -131,21 +125,20 @@
   }
 }
 
-
 @media (max-width: 500px) {
-  .container_text{
+  .container_text {
     height: 44vh;
   }
 
-  .text h1{
-    font-size: 2em!important;
+  .text h1 {
+    font-size: 2em !important;
   }
-  
-  .text h3{
-    font-size: 1.17em!important;
+
+  .text h3 {
+    font-size: 1.17em !important;
   }
-  
-  .text h5{
-    font-size: 0.83em!important;
+
+  .text h5 {
+    font-size: 0.83em !important;
   }
 }

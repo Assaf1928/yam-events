@@ -1,58 +1,86 @@
-import React from 'react';
-import classes from './links.module.css'
+import React from "react";
+import classes from "./links.module.css";
 
 const links = () => (
-
-    <div className={classes.links_container}>
+  <div className={classes.links_container}>
     <div>
-      
-  <ul aria-label="כלי הגשה">
-    <li>צלחות</li>
-    <li>כוסות</li>
-    <li>סכום</li>
-    <li>קערות בר</li>
-    <li>קערות הגשה</li>
-    <li>סלטרום</li>
-    <li>שפינגום</li>
-    <li>סירום</li>
-    <li>מגשי פינוי</li>
-
-
-  </ul>
-    </div>
-
-    <div>
-    <ul aria-label="ציוד אלטרנטיבי">
-    <li>פוטונים</li>
-    <li>אוהלים</li>
-    <li>מחצלות</li>
-    <li>אדומים</li>
-    <li>פנפום</li>
-    </ul>
-    </div>
-
-    <div>
-    <ul aria-label="ציוד נלווה">
-    <li>שמשיות</li>
-    <li>מיזוג</li>
-    <li>פרגודים</li>
-    <li>אוהלים</li>
-    <li>מפות ומפיות</li>
-    <li>כלי חימום וקירור</li>
-
-  </ul>
+      <ul aria-label="כלי הגשה">
+        <li>
+          <a href="category?Id=3&subId=5">צלחות</a>
+        </li>
+        <li>
+          <a href="category?Id=3&subId=3">כוסות</a>
+        </li>
+        <li>
+          <a href="category?Id=3&subId=4">סכום</a>
+        </li>
+        <li>
+          <a href="category?Id=3&subId=1">קערות בר</a>
+        </li>
+        <li>
+          <a href="category?Id=3&subId=8">קערות הגשה</a>
+        </li>
+        <li>
+          <a href="category?Id=3&subId=7">סלטרום</a>
+        </li>
+        <li>
+          <a href="category?Id=3&subId=9">שפינגום</a>
+        </li>
+        <li>
+          <a href="category?Id=3&subId=6">סירום</a>
+        </li>
+        <li>
+          <a href="category?Id=3&subId=2">כלים נלווים</a>
+        </li>
+      </ul>
     </div>
 
     <div>
-    <ul aria-label="ריהוט">
-    <li>שולחנות</li>
-    <li>כסאות</li>
-    <li>מזנונים</li>
-  </ul>
+      <ul aria-label="ציוד אלטרנטיבי">
+        <li>
+          <a href="category?Id=1&subId=4">פוטונים</a>
+        </li>
+        <li>
+          <a href="category?Id=1&subId=5">כריות</a>
+        </li>
+        <li>
+          <a href="category?Id=1&subId=3">מחצלות</a>
+        </li>
+        <li>
+          <a href="category?Id=1&subId=2">הדומים</a>
+        </li>
+        <li>
+          <a href="category?Id=1&subId=1">פופים</a>
+        </li>
+      </ul>
     </div>
 
+    <div>
+      <ul aria-label="ציוד נלווה">
+        <li><a href="category?Id=4&subId=5">אוהלים</a></li>
+        <li><a href="category?Id=4&subId=1">מיזוג</a></li>
+        <li><a href="category?Id=4&subId=2">פרגודים</a></li>
+        <li><a href="category?Id=4&subId=6">מפות</a></li>
+        <li><a href="category?Id=4&subId=4">מפיות</a></li>
+        <li><a href="category?Id=4&subId=3">כלי חימום וקירור</a></li>
+        <li><a href="category?Id=4&subId=7">שמשיות</a></li>
+      </ul>
     </div>
 
-)
+    <div>
+      <ul aria-label="ריהוט">
+        <li>
+          <a href="category?Id=2&subId=3">שולחנות</a>
+        </li>
+        <li>
+          <a href="category?Id=2&subId=2">כסאות</a>
+        </li>
+        <li>
+          <a href="category?Id=2&subId=1">מזנונים</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+);
 
 export default links;
