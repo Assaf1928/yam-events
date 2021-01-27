@@ -10,7 +10,7 @@ const navigationItems = (props) => (
       </NavLink>
     </div>
     <div className={classes.container}>
-      <a href="#about">אודות</a>
+      <a href="/#about">אודות</a>
     </div>
     <div className={classes.container}>
       <div className={classes.drop__down}>

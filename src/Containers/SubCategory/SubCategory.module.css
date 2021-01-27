@@ -5,30 +5,5 @@
     margin: auto;
     margin-top: calc(10vh);
     margin-bottom: 20px;
+    color:black;
 }
-
-.carousel__container {
-    background-color: #f4f4f4;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    text-align: center;
-  }
-  
-  .carousel__img {
-    width: 100%;
-    height: auto;
-  }
-
-  
-ol {
-    z-index: 15;
-    width: 60%;
-    padding: 0;
-    margin: auto !important;
-  }
-  
-  ol li {
-    width: 80% !important;
-    flex: 1 !important;
-  }
