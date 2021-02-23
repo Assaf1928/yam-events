@@ -1,11 +1,12 @@
 import React, { Component, useRef } from "react";
+
 import Card from "../../Components/card/card";
+import CarouselItems from "../../Components/carouselItems/carouselItems";
+import Modal from "../../Components/UI/modal/modal";
+
 import classes from "./SubCategory.module.css";
 import axios from "axios";
-import img1 from "../../image/subCategory/servingDishes/servingBowls/קערה ידית.jpeg";import CarouselItems from "../../Components/carouselItems/carouselItems";
 
-import Modal from "../../Components/UI/modal/modal";
-import Carousel from "react-bootstrap/Carousel";
 class SubCategory extends Component {
   state = {
     data: [],
@@ -55,8 +56,7 @@ class SubCategory extends Component {
     let cards = "לא קיימות תמונות להמחשה !";
     if (this.state.data.length !== 0) {
       cards = this.state.data.map((img, index) => {
-        //let url = this.state.path + img;
-        let url = img1;
+        let url = this.state.path + img;
         let name = img.split(".").slice(0, -1).join(".");
         return (
           <Card
@@ -80,6 +80,7 @@ class SubCategory extends Component {
               setActiveIndex={this.setActiveIndexHandler}
               activeIndex={this.state.activeIndex}
               dataItems={this.state.data}
+              dataPath={this.state.path}
             />
           </div>
         </Modal>

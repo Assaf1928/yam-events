@@ -1,10 +1,6 @@
 import React from "react";
 
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-} from "pure-react-carousel";
+import { CarouselProvider, Slider, Slide } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import generalDesign from "../css/generalDesign.module.css";
 import classes from "./smallCarousel.module.css";
@@ -16,7 +12,8 @@ import img3 from "../../image/smallCarousel/3.jpeg";
 import img4 from "../../image/smallCarousel/4.jpeg";
 import img5 from "../../image/smallCarousel/5.jpeg";
 import img6 from "../../image/smallCarousel/6.jpeg";
-import img7 from "../../image/smallCarousel/7.jpg";
+import img7 from "../../image/smallCarousel/7.jpeg";
+import img8 from "../../image/smallCarousel/8.jpeg";
 
 const smallCarousel = (props) => {
   return (
@@ -32,14 +29,14 @@ const smallCarousel = (props) => {
         </div>
         <div className={classes.container__carousel}>
           <CarouselProvider
-            totalSlides={7}
+            totalSlides={8}
             visibleSlides={props.visibleSlides}
             interval={3000}
+            naturalSlideWidth={100}
+            naturalSlideHeight={100}
             isPlaying={true}
-            naturalSlideWidth={1}
-            naturalSlideHeight={1}
             step={1}
-            infinite={false}
+            dragEnabled={false}
             className={classNames({
               [classes.CarouselProvider]: true,
               [generalDesign.center_horizontal]: false,
@@ -47,25 +44,28 @@ const smallCarousel = (props) => {
           >
             <Slider className={classes.Slider}>
               <Slide index={0} className={classes.Slide}>
-                <SmallCarouselCard img={img1} />
+                <SmallCarouselCard img={img1} title="זכוכית בועות" />
               </Slide>
               <Slide index={1} className={classes.Slide}>
-                <SmallCarouselCard img={img2} />
+                <SmallCarouselCard img={img2} title="יוטה אפור" />
               </Slide>
               <Slide index={2} className={classes.Slide}>
-                <SmallCarouselCard img={img3} />
+                <SmallCarouselCard img={img3} title="זכוכית מרוקעת" />
               </Slide>
               <Slide index={3} className={classes.Slide}>
-                <SmallCarouselCard img={img4} />
+                <SmallCarouselCard img={img4} title="חום" />
               </Slide>
               <Slide index={4} className={classes.Slide}>
-                <SmallCarouselCard img={img5} />
+                <SmallCarouselCard img={img5} title="טרפז" />
               </Slide>
               <Slide index={5} className={classes.Slide}>
-                <SmallCarouselCard img={img6} />
+                <SmallCarouselCard img={img6} title="מרובע לבן" />
               </Slide>
               <Slide index={6} className={classes.Slide}>
-                <SmallCarouselCard img={img7} />
+                <SmallCarouselCard img={img7} title="קאלה" />
+              </Slide>
+              <Slide index={7} className={classes.Slide}>
+                <SmallCarouselCard img={img8} title="שלודיש" />
               </Slide>
             </Slider>
           </CarouselProvider>

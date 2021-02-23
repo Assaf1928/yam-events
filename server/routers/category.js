@@ -184,8 +184,7 @@ router.get("/sub", async (req, res) => {
     const subid = req.query.subId;
     let category = await data.find((category) => category.id == id);
     let sub = await category.subs.find((sub) => sub.id == subid);
-    console.log(category);
-    console.log(sub);
+
     //reciving current location path
     //removing the backend/routers so we can get the base url.
     // e.x. C:/Users/asaf/Desktop/yam-events/ -- > base url
@@ -195,7 +194,6 @@ router.get("/sub", async (req, res) => {
 
     const url = publicDir + "/" + category.clientNeededPath + sub.name;
 
-    console.log(url);
     await fs.readdir(url, (err, files) => {
       if (err) console.log(err);
       else {

@@ -18,10 +18,20 @@
   height: 100%;
 }
 
+.carousel__img_container {
+  width: 100%;
+  height: 79.9vmin;
+  position: relative;
+  border-radius: 10px 10px 0 0 !important;
+}
+
 .carousel__img {
   width: 100%;
   height: auto;
-  border-radius: 10px 10px 0 0 !important;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
 }
 
 .carousel-caption {
@@ -57,12 +67,12 @@ ol li {
 
 .carousel-control-prev,
 .carousel-control-next {
-  filter: invert(90%) sepia(82%) saturate(7%) hue-rotate(314deg) brightness(88%) contrast(95%);
+  filter: invert(90%) sepia(82%) saturate(7%) hue-rotate(314deg) brightness(88%)
+    contrast(95%);
 }
 
-
 @media (max-width: 500px) {
-  .carousel-caption  {
+  .carousel-caption {
     border-radius: 0 0 10px 10px !important;
   }
 

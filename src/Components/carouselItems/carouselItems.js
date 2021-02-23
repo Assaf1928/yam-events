@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 
 import "./carouselItems.css";
 import Carousel from "react-bootstrap/Carousel";
-import img1 from "../../image/subCategory/servingDishes/servingBowls/קערה ידית.jpeg";
 
 const CarouselItems = (props) => {
   const handleSelect = (selectedIndex, e) => {
@@ -12,12 +11,13 @@ const CarouselItems = (props) => {
   let CarouselItems = "";
 
   CarouselItems = props.dataItems.map((img, index) => {
-    // let url = this.state.path + img;
-    let url = img1;
+    let url = `"${props.dataPath}${img}"`;
     let name = img.split(".").slice(0, -1).join(".");
     return (
       <Carousel.Item key={index} id={index}>
-        <img className="carousel__img" src={url} alt={index} />
+        <div className="carousel__img_container">
+          <img className="carousel__img" src={url} alt={index} />
+        </div>
         <Carousel.Caption>
           <p>{name}</p>
         </Carousel.Caption>

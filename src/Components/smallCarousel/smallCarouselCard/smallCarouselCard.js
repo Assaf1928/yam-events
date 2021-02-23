@@ -7,11 +7,11 @@ const smallCarouselCard = (props) => (
     <div className={classses.header}>
       <div
         className={classes.background_img}
-        style={{ backgroundImage: "url(" + props.img + ")" }}
+        style={{ backgroundImage: `url("${props.img}")` }}
       ></div>
     </div>
     <div className={classes.footer}>
-      <p>כותרת</p>
+      <p>{props.title}</p>
     </div>
   </div>
 );
